@@ -12,7 +12,7 @@
      <h1>Internationaal Straattheaterfestival Beveren</h1>
      <nav>
       <ul>
-        <li><a href="index.php?page=index" class="menutekst<?php if($currentPage == 'home') echo '-actief';?>">Home</a></li>
+        <li><a href="index.php?page=index" class="home menutekst<?php if($currentPage == 'home') echo '-actief';?>">Home</a></li>
         <li><a href="index.php?page=programma" class="menutekst<?php if($currentPage == 'programma') echo '-actief';?>">Programma</a></li>
         <li><a href="index.php?page=index" >Praktisch</a></li>
         <li><a href="index.php?page=index" >FAQ</a></li>
@@ -26,8 +26,10 @@
       echo '<div class="infoBalk">' . $_SESSION['info'] . '</div>';
     }
     ?>
-    <p class="hidden">haloooo</p>
+
 
     <?php echo $content ?>
+
+    <?php echo $js; ?>
   </body>
 </html>
