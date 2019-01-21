@@ -26,6 +26,7 @@
       echo '<div class="infoBalk">' . $_SESSION['info'] . '</div>';
     }
     ?>
+    <p class="hidden">haloooo</p>
 
     <?php echo $content ?>
   </body>
