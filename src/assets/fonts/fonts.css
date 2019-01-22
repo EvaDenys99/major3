@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Avenir';
+  src:
+    url('avenirnext-ultralight.woff2') format('woff2'),
+    url('avenirnext-ultralight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gill sans';
+  src:
+    url('gillsans.woff2') format('woff2'),
+    url('gillsans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
