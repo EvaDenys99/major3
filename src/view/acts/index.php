@@ -1,4 +1,5 @@
 <main>
+
 <div class="main">
   <section class="wrapper">
     <div class="wrapper__info">
@@ -52,15 +53,15 @@
 
     <div class="uitgelicht__info">
       <a href="" class="uitgelicht__tile-link">
-        <!-- php code voor uitgelichte act -->
+
         <p>hallooo</p>
       </a>
       <a href="" class="uitgelicht__tile-link2">
-        <!-- php code voor de uitgelichte act -->
+
         <p>hallooo2</p>
       </a>
       <a href="" class="uitgelicht__tile-link3">
-        <!-- php code voor de uitgelichte act -->
+
         <p>hallooo2</p>
       </a>
       <p class="uitgelicht__editie2">13de editie</p>
@@ -202,7 +203,6 @@
             alt="decoratie lijnen."
           />
         </picture>
-    <!-- <img class="blik__deco" src="assets/img/lijnen.png" alt="decoratie lijnen."> -->
     <div class="blik__slider">
       <div class="blik__slider-slide-image__baby"">
         <picture>
