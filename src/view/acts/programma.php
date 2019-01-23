@@ -40,8 +40,8 @@
     </ul>
   </section>
   <div class="acts__download">
-    <a class="acts__link" href="assets/img/home/headerfoto_s.png" download>Programma downloaden</a>
-    <a href="assets/img/home/headerfoto_s.png" download><img src="assets/img/pijl.png" alt="pijltje naar rechts"></a>
+    <a class="acts__link" href="assets/img/programma.pdf" download>Programma downloaden</a>
+    <a href="assets/img/programma.pdf" download><img src="assets/img/pijl.png" alt="pijltje naar rechts"></a>
   </div>
 
 </main>

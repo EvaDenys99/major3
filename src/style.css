@@ -198,7 +198,7 @@ p {
 }
 
 .uitgelicht {
-  padding-top: 2.4rem;
+  padding-top: 5rem;
 }
 
 .uitgelicht__tile-link {
@@ -213,10 +213,16 @@ p {
   display: none;
 }
 
-.uitgelicht__titel {
-  font-size: 2.5rem;
+.uitgelicht__titel2 {
   display: flex;
   justify-content: center;
+}
+
+.uitgelicht__titel,
+.blik__titel {
+  font-size: 2.5rem;
+  background-image: url('./assets/img/deco_uit.png');
+  background-repeat: no-repeat;
 }
 
 .uitgelicht__link {
@@ -309,21 +315,24 @@ p {
   flex-direction: row;
 }
 
-.blik__titel {
-  font-size: 2.5rem;
+.blik__titel2 {
   display: flex;
   justify-content: center;
   padding-top: 2.4rem;
 }
 
+.blik__deco {
+  position: absolute;
+}
+
 .blik__slider {
-  padding-left: 1rem;
+  padding: 2.5rem;
   display: grid;
   overflow: scroll;
   grid-gap: 2rem;
   grid-template-columns: repeat(9, auto);
   grid-template-rows: repeat(auto);
-  grid-template-areas: 'zeplin vrouw opelkaar baby wapper fiets vuur lOnder rOnder';
+  grid-template-areas: 'baby wapper fiets vuur opelkaar vrouw zeplin lOnder rOnder';
 }
 
 .blik__slider-slide-image__baby {
@@ -584,6 +593,10 @@ p {
     grid-area: header;
   }
 
+  .uitgelicht {
+    padding-top: 0;
+  }
+
   .routes {
     grid-area: routes;
     padding-left: 2rem;
@@ -665,6 +678,10 @@ p {
     grid-template-columns: 1% repeat(5, auto) 1%;
     grid-template-rows: auto;
     grid-template-areas: '. horeca warande winkel feesten about .';
+  }
+
+  .blik__deco {
+    display: none;
   }
 
   .blik__slider {
@@ -792,9 +809,13 @@ p {
     justify-content: center;
   }
 
+  .uitgelicht__titel2 {
+    padding-left: 16rem;
+    display: block;
+  }
+
   .uitgelicht__titel {
     justify-content: flex-start;
-    padding-left: 16rem;
   }
 
   .uitgelicht__link {
@@ -854,9 +875,12 @@ p {
     font-size: 2.4rem;
   }
 
+  .uitgelicht__titel2 {
+    padding-left: 21rem;
+  }
+
   .uitgelicht__titel {
     justify-content: flex-start;
-    padding-left: 21rem;
     font-size: 4.8rem;
   }
 

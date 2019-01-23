@@ -46,9 +46,10 @@
     <!-- <img class="wrapper__driehoek" src="assets/img/driehoek.png" alt="achtergrond decoratie, 1 grote roze driehoek, 1 kleine blauwe driehoek."> -->
   </section>
   <section class="uitgelicht">
-    <div class="uitgelicht__titel__deco">
-      <h2 class="uitgelicht__titel">Uitgelicht</h2>
+    <div class="uitgelicht__titel2">
+     <h2 class="uitgelicht__titel">Uitgelicht</h2>
     </div>
+
 
     <div class="uitgelicht__info">
       <a href="" class="uitgelicht__tile-link">
@@ -151,11 +152,14 @@
 
   </div>
   <section class="blik">
-    <h2 class="blik__titel">Een blik op 2017</h2>
+    <div class="blik__titel2">
+      <h2 class="blik__titel">Een blik op 2017</h2>
+    </div>
     <!-- video -->
     <div class="blik__video" >
         <iframe  width=100% height= 100% src="https://www.youtube.com/embed/lrlscBtuSUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    <img class="blik__deco" src="assets/img/lijnen.png" alt="decoratie lijnen.">
     <div class="blik__slider">
       <div class="blik__slider-slide-image__baby"">
         <picture>
@@ -167,7 +171,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <source
             type="png"
@@ -177,7 +181,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <img
             src="assets/img/home/baby_l.png "
@@ -195,7 +199,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <source
             type="png"
@@ -205,7 +209,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <img
             src="assets/img/home/wapper_l.png "
@@ -223,7 +227,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <source
             type="png"
@@ -233,7 +237,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <img
             src="assets/img/home/eenwieler_l.png "
@@ -251,7 +255,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <source
             type="png"
@@ -261,7 +265,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <img
             src="assets/img/home/vrouw_l.png "
@@ -279,7 +283,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <source
             type="png"
@@ -289,7 +293,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <img
             src="assets/img/home/zeplin_l.png "
@@ -307,7 +311,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <source
             type="png"
@@ -317,7 +321,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <img
             src="assets/img/home/opElkaar_l.png "
@@ -335,7 +339,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <source
             type="png"
@@ -345,7 +349,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <img
             src="assets/img/home/lOnder_l.png "
@@ -363,7 +367,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <source
             type="png"
@@ -373,7 +377,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <img
             src="assets/img/home/rOnder_l.png "
@@ -391,7 +395,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <source
             type="png"
@@ -401,7 +405,7 @@
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
-                   (min-width: 0) 40vw"
+                   (min-width: 0) 45vw"
           />
           <img
             src="assets/img/home/vuur_l.png "
