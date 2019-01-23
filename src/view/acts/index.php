@@ -28,22 +28,21 @@
                  (min-width: 0) 100w"
         />
         <source
-          type="png"
+          type="jpg"
           srcset="
-            assets/img/home/headerfoto_s.png   320w,
-            assets/img/home/headerfoto_m.png   775w,
-            assets/img/home/headerfoto_l.png   1441w
+            assets/img/home/headerfoto_s.jpg   320w,
+            assets/img/home/headerfoto_m.jpg   775w,
+            assets/img/home/headerfoto_l.jpg   1441w
           "
           sizes="(min-width: 1024px) 50h,
                  (min-width: 768px) 50w,
                  (min-width: 0) 100w"
         />
         <img class="wrapper__image"
-          src="assets/img/home/headerfoto_l.png "
+          src="assets/img/home/headerfoto_l.jpg "
           alt="Een zwart wit foto van een straatvoorstelling met een verklede man met daarover een roze schijn."
         />
     </picture>
-    <!-- <img class="wrapper__driehoek" src="assets/img/driehoek.png" alt="achtergrond decoratie, 1 grote roze driehoek, 1 kleine blauwe driehoek."> -->
   </section>
   <section class="uitgelicht">
     <div class="uitgelicht__titel2">
@@ -91,18 +90,18 @@
                  (min-width: 0) 100vw"
         />
         <source
-          type="png"
+          type="jpg"
           srcset="
-            assets/img/home/kaart_s.png   335w,
-            assets/img/home/kaart_m.png   354w,
-            assets/img/home/kaart_l.png   422w
+            assets/img/home/kaart_s.jpg   335w,
+            assets/img/home/kaart_m.jpg   354w,
+            assets/img/home/kaart_l.jpg   422w
           "
           sizes="(min-width: 1024px) 30vw,
                  (min-width: 768px) 45vw,
                  (min-width: 0) 100vw"
         />
         <img
-          src="assets/img/home/kaart_l.png "
+          src="assets/img/home/kaart_l.jpg "
           alt="Een kaart met een route aangeduid in het roze."
         />
     </picture>
@@ -127,18 +126,18 @@
                  (min-width: 0) 100vw"
         />
         <source
-          type="png"
+          type="jpg"
           srcset="
 
-            assets/img/home/vrijwilligers_m.png   355w,
-            assets/img/home/vrijwilligers_l.png   422w
+            assets/img/home/vrijwilligers_m.jpg   355w,
+            assets/img/home/vrijwilligers_l.jpg   422w
           "
           sizes="(min-width: 1024px) 30vw,
                  (min-width: 768px) 45vw,
                  (min-width: 0) 100vw"
         />
         <img
-          src="assets/img/home/vrijwilligers_l.png "
+          src="assets/img/home/vrijwilligers_l.jpg "
           alt="Een illustratie van een wereldbol met de vredensduif en de tekst Bedankt, vrijwilligers."
         />
     </picture>
@@ -159,7 +158,51 @@
     <div class="blik__video" >
         <iframe  width=100% height= 100% src="https://www.youtube.com/embed/lrlscBtuSUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <img class="blik__deco" src="assets/img/lijnen.png" alt="decoratie lijnen.">
+    <picture>
+          <source
+            type="image/webp"
+            srcset="
+            assets/img/lijnen.webp  169w
+            "
+            sizes="50vw"
+          />
+          <source
+            type="png"
+            srcset="
+            assets/img/lijnen.png   169w
+            "
+            sizes="50vw"
+          />
+          <img
+          class="blik__deco"
+            src="assets/img/lijnen.png "
+            alt="decoratie lijnen."
+          />
+        </picture>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+            assets/img/lijnen_m.webp  172w
+            "
+            sizes="(min-width: 1024px) 15vw,
+                   (min-width: 0) 20vw"
+          />
+          <source
+            type="png"
+            srcset="
+            assets/img/lijnen_m.png   172w
+            "
+            sizes="(min-width: 1024px) 15vw,
+                   (min-width: 0) 20vw"
+          />
+          <img
+          class="blik__deco__m"
+            src="assets/img/lijnen_m.png "
+            alt="decoratie lijnen."
+          />
+        </picture>
+    <!-- <img class="blik__deco" src="assets/img/lijnen.png" alt="decoratie lijnen."> -->
     <div class="blik__slider">
       <div class="blik__slider-slide-image__baby"">
         <picture>
@@ -174,17 +217,17 @@
                    (min-width: 0) 45vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/baby_m.png   147w,
-              assets/img/home/baby_l.png   248w
+              assets/img/home/baby_m.jpg   147w,
+              assets/img/home/baby_l.jpg   248w
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
                    (min-width: 0) 45vw"
           />
           <img
-            src="assets/img/home/baby_l.png "
+            src="assets/img/home/baby_l.jpg "
             alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
           />
         </picture>
@@ -202,17 +245,17 @@
                    (min-width: 0) 45vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/wapper_m.png   147w,
-              assets/img/home/wapper_l.png   248w
+              assets/img/home/wapper_m.jpg   147w,
+              assets/img/home/wapper_l.jpg   248w
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
                    (min-width: 0) 45vw"
           />
           <img
-            src="assets/img/home/wapper_l.png "
+            src="assets/img/home/wapper_l.jpg "
             alt="Een zwart wit sfeerfoto van hetzelfde personage als het hoofdbeeld."
           />
         </picture>
@@ -230,17 +273,17 @@
                    (min-width: 0) 45vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/eenwieler_m.png   147w,
-              assets/img/home/eenwieler_l.png   248w
+              assets/img/home/eenwieler_m.jpg   147w,
+              assets/img/home/eenwieler_l.jpg   248w
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
                    (min-width: 0) 45vw"
           />
           <img
-            src="assets/img/home/eenwieler_l.png "
+            src="assets/img/home/eenwieler_l.jpg "
             alt="Een zwart wit sfeerfoto van een eenwieler."
           />
         </picture>
@@ -258,17 +301,17 @@
                    (min-width: 0) 45vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/vrouw_m.png   147w,
-              assets/img/home/vrouw_l.png   248w
+              assets/img/home/vrouw_m.jpg   147w,
+              assets/img/home/vrouw_l.jpg   248w
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
                    (min-width: 0) 45vw"
           />
           <img
-            src="assets/img/home/vrouw_l.png "
+            src="assets/img/home/vrouw_l.jpg "
             alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
           />
         </picture>
@@ -286,17 +329,17 @@
                    (min-width: 0) 45vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/zeplin_m.png   147w,
-              assets/img/home/zeplin_l.png   248w
+              assets/img/home/zeplin_m.jpg   147w,
+              assets/img/home/zeplin_l.jpg   248w
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
                    (min-width: 0) 45vw"
           />
           <img
-            src="assets/img/home/zeplin_l.png "
+            src="assets/img/home/zeplin_l.jpg "
             alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
           />
         </picture>
@@ -314,17 +357,17 @@
                    (min-width: 0) 45vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/opElkaar_m.png   147w,
-              assets/img/home/opElkaar_l.png   248w
+              assets/img/home/opElkaar_m.jpg   147w,
+              assets/img/home/opElkaar_l.jpg   248w
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
                    (min-width: 0) 45vw"
           />
           <img
-            src="assets/img/home/opElkaar_l.png "
+            src="assets/img/home/opElkaar_l.jpg "
             alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
           />
         </picture>
@@ -342,17 +385,17 @@
                    (min-width: 0) 45vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/lOnder_m.png   147w,
-              assets/img/home/lOnder_l.png   248w
+              assets/img/home/lOnder_m.jpg   147w,
+              assets/img/home/lOnder_l.jpg   248w
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
                    (min-width: 0) 45vw"
           />
           <img
-            src="assets/img/home/lOnder_l.png "
+            src="assets/img/home/lOnder_l.jpg "
             alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
           />
         </picture>
@@ -370,17 +413,17 @@
                    (min-width: 0) 45vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/rOnder_m.png   147w,
-              assets/img/home/rOnder_l.png   248w
+              assets/img/home/rOnder_m.jpg   147w,
+              assets/img/home/rOnder_l.jpg   248w
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
                    (min-width: 0) 45vw"
           />
           <img
-            src="assets/img/home/rOnder_l.png "
+            src="assets/img/home/rOnder_l.jpg "
             alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
           />
         </picture>
@@ -398,17 +441,17 @@
                    (min-width: 0) 45vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/vuur_m.png   147w,
-              assets/img/home/vuur_l.png   248w
+              assets/img/home/vuur_m.jpg   147w,
+              assets/img/home/vuur_l.jpg   248w
             "
             sizes="(min-width: 1024px) 12vw,
                    (min-width: 768px) 15vw,
                    (min-width: 0) 45vw"
           />
           <img
-            src="assets/img/home/vuur_l.png "
+            src="assets/img/home/vuur_l.jpg "
             alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
           />
         </picture>

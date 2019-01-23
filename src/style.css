@@ -185,6 +185,8 @@ p {
   padding-right: 2rem;
   padding-bottom: 1rem;
   padding-top: 4rem;
+
+  font-weight: bold;
 }
 
 .uitgelicht__info {
@@ -323,6 +325,10 @@ p {
 
 .blik__deco {
   position: absolute;
+}
+
+.blik__deco__m {
+  display: none;
 }
 
 .blik__slider {
@@ -684,6 +690,11 @@ p {
     display: none;
   }
 
+  .blik__deco__m {
+    display: block;
+    position: absolute;
+  }
+
   .blik__slider {
     padding-left: 0;
     overflow: hidden;
@@ -850,6 +861,10 @@ p {
 
   .wij__tekst {
     width: 34rem;
+  }
+
+  .blik__deco__m {
+    padding-left: 2.5rem;
   }
 
   .blik__video {
