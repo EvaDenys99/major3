@@ -9,7 +9,10 @@
           <p class="wrapper__dateM">augustus</p>
           <p class="wrapper__dateY">2018</p>
         </div>
-        <p class="wrapper__gratis">Gratis</p>
+        <div class="gratis">
+         <p class="wrapper__gratis">Gratis</p>
+        </div>
+
       </div>
     </div>
     <picture>
@@ -20,7 +23,8 @@
             assets/img/home/headerfoto_m.webp  775w,
             assets/img/home/headerfoto_l.webp  1441w
           "
-          sizes="(min-width: 768px) 50w,
+          sizes="(min-width: 1024px) 50h,
+                 (min-width: 768px) 50w,
                  (min-width: 0) 100w"
         />
         <source
@@ -30,7 +34,8 @@
             assets/img/home/headerfoto_m.png   775w,
             assets/img/home/headerfoto_l.png   1441w
           "
-          sizes="(min-width: 768px) 50w,
+          sizes="(min-width: 1024px) 50h,
+                 (min-width: 768px) 50w,
                  (min-width: 0) 100w"
         />
         <img class="wrapper__image"
@@ -41,7 +46,10 @@
     <!-- <img class="wrapper__driehoek" src="assets/img/driehoek.png" alt="achtergrond decoratie, 1 grote roze driehoek, 1 kleine blauwe driehoek."> -->
   </section>
   <section class="uitgelicht">
-    <h2 class="uitgelicht__titel">Uitgelicht</h2>
+    <div class="uitgelicht__titel__deco">
+      <h2 class="uitgelicht__titel">Uitgelicht</h2>
+    </div>
+
     <div class="uitgelicht__info">
       <a href="" class="uitgelicht__tile-link">
         <!-- php code voor uitgelichte act -->
@@ -51,6 +59,11 @@
         <!-- php code voor de uitgelichte act -->
         <p>hallooo2</p>
       </a>
+      <a href="" class="uitgelicht__tile-link3">
+        <!-- php code voor de uitgelichte act -->
+        <p>hallooo2</p>
+      </a>
+      <p class="uitgelicht__editie2">13de editie</p>
       <a href="index.php?page=programma" class="uitgelicht__link">
         <p class="uitgelicht__editie">13de editie</p>
         <p class="uitgelicht__meer">Ontdek het programma</p>
@@ -72,7 +85,8 @@
             assets/img/home/kaart_m.webp  354w,
             assets/img/home/kaart_l.webp  422w
           "
-          sizes="(min-width: 768px) 45vw,
+          sizes="(min-width: 1024px) 30vw,
+                 (min-width: 768px) 45vw,
                  (min-width: 0) 100vw"
         />
         <source
@@ -82,7 +96,8 @@
             assets/img/home/kaart_m.png   354w,
             assets/img/home/kaart_l.png   422w
           "
-          sizes="(min-width: 768px) 45vw,
+          sizes="(min-width: 1024px) 30vw,
+                 (min-width: 768px) 45vw,
                  (min-width: 0) 100vw"
         />
         <img
@@ -102,21 +117,23 @@
         <source
           type="image/webp"
           srcset="
-            assets/img/home/vrijwilligers_s.webp  343w,
+
             assets/img/home/vrijwilligers_m.webp  355w,
             assets/img/home/vrijwilligers_l.webp  422w
           "
-          sizes="(min-width: 768px) 45vw,
+          sizes="(min-width: 1024px) 30vw,
+                 (min-width: 768px) 45vw,
                  (min-width: 0) 100vw"
         />
         <source
           type="png"
           srcset="
-            assets/img/home/vrijwilligers_s.png   343w,
+
             assets/img/home/vrijwilligers_m.png   355w,
             assets/img/home/vrijwilligers_l.png   422w
           "
-          sizes="(min-width: 768px) 45vw,
+          sizes="(min-width: 1024px) 30vw,
+                 (min-width: 768px) 45vw,
                  (min-width: 0) 100vw"
         />
         <img
@@ -148,8 +165,9 @@
               assets/img/home/baby_m.webp  147w,
               assets/img/home/baby_l.webp  248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <source
             type="png"
@@ -157,8 +175,9 @@
               assets/img/home/baby_m.png   147w,
               assets/img/home/baby_l.png   248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <img
             src="assets/img/home/baby_l.png "
@@ -174,8 +193,9 @@
               assets/img/home/wapper_m.webp  147w,
               assets/img/home/wapper_l.webp  248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <source
             type="png"
@@ -183,8 +203,9 @@
               assets/img/home/wapper_m.png   147w,
               assets/img/home/wapper_l.png   248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <img
             src="assets/img/home/wapper_l.png "
@@ -200,8 +221,9 @@
               assets/img/home/eenwieler_m.webp  147w,
               assets/img/home/eenwieler_l.webp  248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <source
             type="png"
@@ -209,8 +231,9 @@
               assets/img/home/eenwieler_m.png   147w,
               assets/img/home/eenwieler_l.png   248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <img
             src="assets/img/home/eenwieler_l.png "
@@ -226,8 +249,9 @@
               assets/img/home/vrouw_m.webp  147w,
               assets/img/home/vrouw_l.webp  248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <source
             type="png"
@@ -235,8 +259,9 @@
               assets/img/home/vrouw_m.png   147w,
               assets/img/home/vrouw_l.png   248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <img
             src="assets/img/home/vrouw_l.png "
@@ -252,8 +277,9 @@
               assets/img/home/zeplin_m.webp  147w,
               assets/img/home/zeplin_l.webp  248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <source
             type="png"
@@ -261,8 +287,9 @@
               assets/img/home/zeplin_m.png   147w,
               assets/img/home/zeplin_l.png   248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <img
             src="assets/img/home/zeplin_l.png "
@@ -278,8 +305,9 @@
               assets/img/home/opElkaar_m.webp  147w,
               assets/img/home/opElkaar_l.webp  248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <source
             type="png"
@@ -287,8 +315,9 @@
               assets/img/home/opElkaar_m.png   147w,
               assets/img/home/opElkaar_l.png   248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <img
             src="assets/img/home/opElkaar_l.png "
@@ -304,8 +333,9 @@
               assets/img/home/lOnder_m.webp  147w,
               assets/img/home/lOnder_l.webp  248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <source
             type="png"
@@ -313,8 +343,9 @@
               assets/img/home/lOnder_m.png   147w,
               assets/img/home/lOnder_l.png   248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <img
             src="assets/img/home/lOnder_l.png "
@@ -330,8 +361,9 @@
               assets/img/home/rOnder_m.webp  147w,
               assets/img/home/rOnder_l.webp  248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <source
             type="png"
@@ -339,8 +371,9 @@
               assets/img/home/rOnder_m.png   147w,
               assets/img/home/rOnder_l.png   248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <img
             src="assets/img/home/rOnder_l.png "
@@ -356,8 +389,9 @@
               assets/img/home/vuur_m.webp  147w,
               assets/img/home/vuur_l.webp  248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <source
             type="png"
@@ -365,8 +399,9 @@
               assets/img/home/vuur_m.png   147w,
               assets/img/home/vuur_l.png   248w
             "
-            sizes="(min-width: 768px) 15vw,
-                  (min-width: 0) 40vw"
+            sizes="(min-width: 1024px) 12vw,
+                   (min-width: 768px) 15vw,
+                   (min-width: 0) 40vw"
           />
           <img
             src="assets/img/home/vuur_l.png "

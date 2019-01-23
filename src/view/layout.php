@@ -68,7 +68,7 @@
               assets/img/home/horeca_m.webp  48w,
               assets/img/home/horeca_l.webp  95w
             "
-            sizes="(min-width: 768px) 10vw,
+            sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <source
@@ -78,7 +78,7 @@
               assets/img/home/horeca_m.png   48w,
               assets/img/home/horeca_l.png   95w
             "
-            sizes="(min-width: 768px) 10vw,
+            sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <img
@@ -94,7 +94,7 @@
               assets/img/home/warande_m.webp  48w,
               assets/img/home/warande_l.webp  95w
             "
-            sizes="(min-width: 768px) 10vw,
+            sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <source
@@ -104,7 +104,7 @@
               assets/img/home/warande_m.png   48w,
               assets/img/home/warande_l.png   95w
             "
-            sizes="(min-width: 768px) 10vw,
+            sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <img
@@ -120,7 +120,7 @@
               assets/img/home/winkeldorp_m.webp  48w,
               assets/img/home/winkeldorp_l.webp  95w
             "
-            sizes="(min-width: 768px) 10vw,
+            sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <source
@@ -130,7 +130,7 @@
               assets/img/home/winkeldorp_m.png   48w,
               assets/img/home/winkeldorp_l.png   95w
             "
-            sizes="(min-width: 768px) 10vw,
+            sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <img
@@ -146,7 +146,7 @@
               assets/img/home/feesten_m.webp  48w,
               assets/img/home/feesten_l.webp  95w
             "
-            sizes="(min-width: 768px) 10vw,
+            sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <source
@@ -156,7 +156,7 @@
               assets/img/home/feesten_m.png   48w,
               assets/img/home/feesten_l.png   95w
             "
-            sizes="(min-width: 768px) 10vw,
+            sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <img
@@ -172,7 +172,7 @@
               assets/img/home/about_m.webp  48w,
               assets/img/home/about_l.webp  95w
             "
-            sizes="(min-width: 768px) 10vw,
+            sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <source
@@ -182,7 +182,7 @@
               assets/img/home/about_m.png   48w,
               assets/img/home/about_l.png   95w
             "
-            sizes="(min-width: 768px) 10vw,
+            sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <img
