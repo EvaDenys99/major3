@@ -72,7 +72,7 @@
             assets/img/home/kaart_m.webp  354w,
             assets/img/home/kaart_l.webp  422w
           "
-          sizes="(min-width: 768px) 50vw,
+          sizes="(min-width: 768px) 45vw,
                  (min-width: 0) 100vw"
         />
         <source
@@ -82,7 +82,7 @@
             assets/img/home/kaart_m.png   354w,
             assets/img/home/kaart_l.png   422w
           "
-          sizes="(min-width: 768px) 50vw,
+          sizes="(min-width: 768px) 45vw,
                  (min-width: 0) 100vw"
         />
         <img
@@ -106,7 +106,7 @@
             assets/img/home/vrijwilligers_m.webp  355w,
             assets/img/home/vrijwilligers_l.webp  422w
           "
-          sizes="(min-width: 768px) 50vw,
+          sizes="(min-width: 768px) 45vw,
                  (min-width: 0) 100vw"
         />
         <source
@@ -116,7 +116,7 @@
             assets/img/home/vrijwilligers_m.png   355w,
             assets/img/home/vrijwilligers_l.png   422w
           "
-          sizes="(min-width: 768px) 50vw,
+          sizes="(min-width: 768px) 45vw,
                  (min-width: 0) 100vw"
         />
         <img
@@ -136,17 +136,19 @@
   <section class="blik">
     <h2 class="blik__titel">Een blik op 2017</h2>
     <!-- video -->
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lrlscBtuSUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="blik__video" >
+        <iframe  width=100% height= 100% src="https://www.youtube.com/embed/lrlscBtuSUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <div class="blik__slider">
-      <div class="blik__slider-slide">
-        <picture class="blik__slider-slide-image__baby">
+      <div class="blik__slider-slide-image__baby"">
+        <picture>
           <source
             type="image/webp"
             srcset="
               assets/img/home/baby_m.webp  147w,
               assets/img/home/baby_l.webp  248w
             "
-            sizes="(min-width: 768px) 50vw,
+            sizes="(min-width: 768px) 15vw,
                   (min-width: 0) 40vw"
           />
           <source
@@ -155,7 +157,7 @@
               assets/img/home/baby_m.png   147w,
               assets/img/home/baby_l.png   248w
             "
-            sizes="(min-width: 768px) 50vw,
+            sizes="(min-width: 768px) 15vw,
                   (min-width: 0) 40vw"
           />
           <img
@@ -164,15 +166,15 @@
           />
         </picture>
       </div>
-      <div class="blik__slider-slide">
-        <picture class="blik__image__wapper">
+      <div class="blik__image__wapper">
+        <picture >
           <source
             type="image/webp"
             srcset="
               assets/img/home/wapper_m.webp  147w,
               assets/img/home/wapper_l.webp  248w
             "
-            sizes="(min-width: 768px) 50vw,
+            sizes="(min-width: 768px) 15vw,
                   (min-width: 0) 40vw"
           />
           <source
@@ -181,7 +183,7 @@
               assets/img/home/wapper_m.png   147w,
               assets/img/home/wapper_l.png   248w
             "
-            sizes="(min-width: 768px) 50vw,
+            sizes="(min-width: 768px) 15vw,
                   (min-width: 0) 40vw"
           />
           <img
@@ -190,15 +192,15 @@
           />
         </picture>
       </div>
-      <div class="blik__slider-slide">
-        <picture class="blik__image__eenwieler">
+      <div class="blik__image__eenwieler">
+        <picture >
           <source
             type="image/webp"
             srcset="
               assets/img/home/eenwieler_m.webp  147w,
               assets/img/home/eenwieler_l.webp  248w
             "
-            sizes="(min-width: 768px) 50vw,
+            sizes="(min-width: 768px) 15vw,
                   (min-width: 0) 40vw"
           />
           <source
@@ -207,7 +209,7 @@
               assets/img/home/eenwieler_m.png   147w,
               assets/img/home/eenwieler_l.png   248w
             "
-            sizes="(min-width: 768px) 50vw,
+            sizes="(min-width: 768px) 15vw,
                   (min-width: 0) 40vw"
           />
           <img
@@ -216,15 +218,15 @@
           />
         </picture>
       </div>
-      <div class="blik__slider-slide">
-        <picture class="blik__image__vrouw">
+      <div class="blik__image__vrouw">
+        <picture >
           <source
             type="image/webp"
             srcset="
               assets/img/home/vrouw_m.webp  147w,
               assets/img/home/vrouw_l.webp  248w
             "
-            sizes="(min-width: 768px) 50vw,
+            sizes="(min-width: 768px) 15vw,
                   (min-width: 0) 40vw"
           />
           <source
@@ -233,7 +235,7 @@
               assets/img/home/vrouw_m.png   147w,
               assets/img/home/vrouw_l.png   248w
             "
-            sizes="(min-width: 768px) 50vw,
+            sizes="(min-width: 768px) 15vw,
                   (min-width: 0) 40vw"
           />
           <img
@@ -242,15 +244,15 @@
           />
         </picture>
       </div>
-      <div class="blik__slider-slide">
-        <picture class="blik__image__zeplin">
+      <div class="blik__image__zeplin">
+        <picture >
           <source
             type="image/webp"
             srcset="
               assets/img/home/zeplin_m.webp  147w,
               assets/img/home/zeplin_l.webp  248w
             "
-            sizes="(min-width: 768px) 50vw,
+            sizes="(min-width: 768px) 15vw,
                   (min-width: 0) 40vw"
           />
           <source
@@ -259,11 +261,115 @@
               assets/img/home/zeplin_m.png   147w,
               assets/img/home/zeplin_l.png   248w
             "
-            sizes="(min-width: 768px) 50vw,
+            sizes="(min-width: 768px) 15vw,
                   (min-width: 0) 40vw"
           />
           <img
             src="assets/img/home/zeplin_l.png "
+            alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
+          />
+        </picture>
+      </div>
+      <div class="blik__image__opELkaar">
+        <picture >
+          <source
+            type="image/webp"
+            srcset="
+              assets/img/home/opElkaar_m.webp  147w,
+              assets/img/home/opElkaar_l.webp  248w
+            "
+            sizes="(min-width: 768px) 15vw,
+                  (min-width: 0) 40vw"
+          />
+          <source
+            type="png"
+            srcset="
+              assets/img/home/opElkaar_m.png   147w,
+              assets/img/home/opElkaar_l.png   248w
+            "
+            sizes="(min-width: 768px) 15vw,
+                  (min-width: 0) 40vw"
+          />
+          <img
+            src="assets/img/home/opElkaar_l.png "
+            alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
+          />
+        </picture>
+      </div>
+      <div class="blik__image__lOnder">
+        <picture >
+          <source
+            type="image/webp"
+            srcset="
+              assets/img/home/lOnder_m.webp  147w,
+              assets/img/home/lOnder_l.webp  248w
+            "
+            sizes="(min-width: 768px) 15vw,
+                  (min-width: 0) 40vw"
+          />
+          <source
+            type="png"
+            srcset="
+              assets/img/home/lOnder_m.png   147w,
+              assets/img/home/lOnder_l.png   248w
+            "
+            sizes="(min-width: 768px) 15vw,
+                  (min-width: 0) 40vw"
+          />
+          <img
+            src="assets/img/home/lOnder_l.png "
+            alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
+          />
+        </picture>
+      </div>
+      <div class="blik__image__rOnder">
+        <picture >
+          <source
+            type="image/webp"
+            srcset="
+              assets/img/home/rOnder_m.webp  147w,
+              assets/img/home/rOnder_l.webp  248w
+            "
+            sizes="(min-width: 768px) 15vw,
+                  (min-width: 0) 40vw"
+          />
+          <source
+            type="png"
+            srcset="
+              assets/img/home/rOnder_m.png   147w,
+              assets/img/home/rOnder_l.png   248w
+            "
+            sizes="(min-width: 768px) 15vw,
+                  (min-width: 0) 40vw"
+          />
+          <img
+            src="assets/img/home/rOnder_l.png "
+            alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
+          />
+        </picture>
+      </div>
+      <div class="blik__image__vuur">
+        <picture >
+          <source
+            type="image/webp"
+            srcset="
+              assets/img/home/vuur_m.webp  147w,
+              assets/img/home/vuur_l.webp  248w
+            "
+            sizes="(min-width: 768px) 15vw,
+                  (min-width: 0) 40vw"
+          />
+          <source
+            type="png"
+            srcset="
+              assets/img/home/vuur_m.png   147w,
+              assets/img/home/vuur_l.png   248w
+            "
+            sizes="(min-width: 768px) 15vw,
+                  (min-width: 0) 40vw"
+          />
+          <img
+            src="assets/img/home/vuur_l.png "
             alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
           />
         </picture>

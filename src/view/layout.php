@@ -68,7 +68,8 @@
               assets/img/home/horeca_m.webp  48w,
               assets/img/home/horeca_l.webp  95w
             "
-            sizes="20vw"
+            sizes="(min-width: 768px) 10vw,
+                 (min-width: 0) 20vw"
           />
           <source
             type="png"
@@ -77,7 +78,8 @@
               assets/img/home/horeca_m.png   48w,
               assets/img/home/horeca_l.png   95w
             "
-            sizes="20vw"
+            sizes="(min-width: 768px) 10vw,
+                 (min-width: 0) 20vw"
           />
           <img
             src="assets/img/home/horeca_l.png "
@@ -92,7 +94,8 @@
               assets/img/home/warande_m.webp  48w,
               assets/img/home/warande_l.webp  95w
             "
-            sizes="20vw"
+            sizes="(min-width: 768px) 10vw,
+                 (min-width: 0) 20vw"
           />
           <source
             type="png"
@@ -101,7 +104,8 @@
               assets/img/home/warande_m.png   48w,
               assets/img/home/warande_l.png   95w
             "
-            sizes="20vw"
+            sizes="(min-width: 768px) 10vw,
+                 (min-width: 0) 20vw"
           />
           <img
             src="assets/img/home/warande_l.png "
@@ -116,7 +120,8 @@
               assets/img/home/winkeldorp_m.webp  48w,
               assets/img/home/winkeldorp_l.webp  95w
             "
-            sizes="20vw"
+            sizes="(min-width: 768px) 10vw,
+                 (min-width: 0) 20vw"
           />
           <source
             type="png"
@@ -125,7 +130,8 @@
               assets/img/home/winkeldorp_m.png   48w,
               assets/img/home/winkeldorp_l.png   95w
             "
-            sizes="20vw"
+            sizes="(min-width: 768px) 10vw,
+                 (min-width: 0) 20vw"
           />
           <img
             src="assets/img/home/winkeldorp_l.png "
@@ -140,7 +146,8 @@
               assets/img/home/feesten_m.webp  48w,
               assets/img/home/feesten_l.webp  95w
             "
-            sizes="20vw"
+            sizes="(min-width: 768px) 10vw,
+                 (min-width: 0) 20vw"
           />
           <source
             type="png"
@@ -149,7 +156,8 @@
               assets/img/home/feesten_m.png   48w,
               assets/img/home/feesten_l.png   95w
             "
-            sizes="20vw"
+            sizes="(min-width: 768px) 10vw,
+                 (min-width: 0) 20vw"
           />
           <img
             src="assets/img/home/feesten_l.png "
@@ -164,7 +172,8 @@
               assets/img/home/about_m.webp  48w,
               assets/img/home/about_l.webp  95w
             "
-            sizes="20vw"
+            sizes="(min-width: 768px) 10vw,
+                 (min-width: 0) 20vw"
           />
           <source
             type="png"
@@ -173,7 +182,8 @@
               assets/img/home/about_m.png   48w,
               assets/img/home/about_l.png   95w
             "
-            sizes="20vw"
+            sizes="(min-width: 768px) 10vw,
+                 (min-width: 0) 20vw"
           />
           <img
             src="assets/img/home/about_l.png "
@@ -198,10 +208,10 @@
         </article>
       </section>
       <section class="copyright">
-        <p>©internationaal Straattheaterfestival Beveren</p>
-        <p>Cookie policy</p>
-        <p>Privacy policy</p>
-        <p>Algemene voorwaarden</p>
+        <p class="copyrights">©internationaal Straattheaterfestival Beveren</p>
+        <p class="copyrights">Cookie policy</p>
+        <p class="copyrights">Privacy policy</p>
+        <p class="copyrights">Algemene voorwaarden</p>
       </section>
       <p class="copyrightEva">©Eva Denys</p>
     </footer>
