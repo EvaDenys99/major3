@@ -20,25 +20,47 @@ class ActsController extends Controller {
     $this->set('currentPage', 'programma');
       // filter
     if (!empty($_GET['action']) && $_GET['action'] == 'filter') {
-      $activiteiten = $this->actDAO->search($_GET['dag']);
+      $activiteiten = $this->actDAO->search($_GET['dag'], $_GET['soort'], $_GET['locatie']);
       $this->set('dag',$_GET['dag']);
+      $this->set('soort',$_GET['soort']);
+      $this->set('locatie',$_GET['locatie']);
       $this->set('currentDay', $_GET['dag']);
+      $this->set('currentSoort', $_GET['soort']);
+      $this->set('currentLocatie', $_GET['locatie']);
     }else{
-      $activiteiten = $this->actDAO->search(1);
+      $activiteiten = $this->actDAO->search();
       $this->set('dag', 1);
-      $this->set('currentDay', 1);
+      $this->set('soort', '');
+      $this->set('locatie', '');
+      $this->set('currentDay',  1);
+      $this->set('currentSoort', '');
+      $this->set('currentLocatie', '');
     }
 
     $this->set('activiteiten', $activiteiten);
 
-    // if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
+    if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
 
-      //   header('Content-Type: application/json');
-      //   echo json_encode($players);
-      //   exit();
-      // }
+        header('Content-Type: application/json');
+        echo json_encode($players);
+        exit();
+    }
   }
   public function view() {
+    $this->set('currentPage', 'programma');
+    if(!empty($_GET['id'])) {
+      //voor de detailpage
+      $actId = $_GET['id'];
+      $act = $this->actDAO->selectById($actId);
+      $this->set('act', $act);
+    }
+
+    if(empty($act)){
+      //id validatie
+      $_SESSION['error'] = 'Unknown act';
+      header('Location: index.php');
+      exit();
+    }
 
   }
 }

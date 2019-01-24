@@ -72,17 +72,18 @@
                  (min-width: 0) 20vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/horeca_s.png   55w,
-              assets/img/home/horeca_m.png   48w,
-              assets/img/home/horeca_l.png   95w
+              assets/img/home/horeca_s.jpg   55w,
+              assets/img/home/horeca_m.jpg   48w,
+              assets/img/home/horeca_l.jpg   95w
             "
             sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <img
-            src="assets/img/home/horeca_l.png "
+            src="assets/img/home/horeca_l.jpg "
+            width= "100%"
             alt="Een zwart wit foto van het logo van de parnter horeca."
           />
         </picture>
@@ -98,17 +99,18 @@
                  (min-width: 0) 20vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/warande_s.png   55w,
-              assets/img/home/warande_m.png   48w,
-              assets/img/home/warande_l.png   95w
+              assets/img/home/warande_s.jpg   55w,
+              assets/img/home/warande_m.jpg   48w,
+              assets/img/home/warande_l.jpg   95w
             "
             sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <img
-            src="assets/img/home/warande_l.png "
+            src="assets/img/home/warande_l.jpg "
+            width= "100%"
             alt="Een zwart wit foto van het logo van de parnter warande."
           />
         </picture>
@@ -124,17 +126,18 @@
                  (min-width: 0) 20vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/winkeldorp_s.png   55w,
-              assets/img/home/winkeldorp_m.png   48w,
-              assets/img/home/winkeldorp_l.png   95w
+              assets/img/home/winkeldorp_s.jpg   55w,
+              assets/img/home/winkeldorp_m.jpg   48w,
+              assets/img/home/winkeldorp_l.jpg   95w
             "
             sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <img
-            src="assets/img/home/winkeldorp_l.png "
+            src="assets/img/home/winkeldorp_l.jpg "
+            width= "100%"
             alt="Een zwart wit foto van het logo van de parnter winkeldorp."
           />
         </picture>
@@ -150,17 +153,18 @@
                  (min-width: 0) 20vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/feesten_s.png   55w,
-              assets/img/home/feesten_m.png   48w,
-              assets/img/home/feesten_l.png   95w
+              assets/img/home/feesten_s.jpg   55w,
+              assets/img/home/feesten_m.jpg   48w,
+              assets/img/home/feesten_l.jpg   95w
             "
             sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <img
-            src="assets/img/home/feesten_l.png "
+            src="assets/img/home/feesten_l.jpg "
+            width= "100%"
             alt="Een zwart wit foto van het logo van de parnter feesten."
           />
         </picture>
@@ -176,17 +180,18 @@
                  (min-width: 0) 20vw"
           />
           <source
-            type="png"
+            type="jpg"
             srcset="
-              assets/img/home/about_s.png   55w,
-              assets/img/home/about_m.png   48w,
-              assets/img/home/about_l.png   95w
+              assets/img/home/about_s.jpg   55w,
+              assets/img/home/about_m.jpg   48w,
+              assets/img/home/about_l.jpg   95w
             "
             sizes="(min-width: 768px) 7vw,
                  (min-width: 0) 20vw"
           />
           <img
-            src="assets/img/home/about_l.png "
+            src="assets/img/home/about_l.jpg "
+            width= "100%"
             alt="Een zwart wit foto van het logo van de parnter about."
           />
         </picture>

@@ -3,8 +3,8 @@
 :root {
   --rose: #cb6799;
   --light-rose: #ca7ba2;
-  --black: #262a34;
-  --white: #fff;
+  --black: black;
+  --white: white;
   --dark-rose: #b13372;
   --dark-red: #600;
   --green-bleu: #00c9b4;
@@ -45,11 +45,11 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Gill sans';
+  font-family: Gillsans, sans-serif;
 }
 
 p {
-  font-family: 'Avenir';
+  font-family: Avenir, sans-serif;
 }
 
 .site-header__titel {
@@ -57,7 +57,7 @@ p {
 }
 
 .site-header__titelAfkort {
-  font-family: 'Gill sans';
+  font-family: Gillsans, sans-serif;
   font-size: 3.6rem;
   text-decoration-line: none;
   color: var(--white);
@@ -91,13 +91,13 @@ p {
 }
 
 .site-header__menutekst {
-  font-family: 'Avenir';
+  font-family: Avenir, sans-serif;
   text-decoration-line: none;
   color: var(--white);
 }
 
 .site-header__menutekst-actief {
-  font-family: 'Avenir';
+  font-family: Avenir, sans-serif;
   position: relative;
   color: var(--white);
   text-decoration-line: underline;
@@ -223,7 +223,7 @@ p {
 .uitgelicht__titel,
 .blik__titel {
   font-size: 2.5rem;
-  background-image: url('./assets/img/deco_uit.png');
+  background-image: url(./assets/img/deco_uit.png);
   background-repeat: no-repeat;
 }
 
@@ -398,7 +398,7 @@ p {
 
 .switch-field,
 .switch-field-datum {
-  font-family: 'Gill sans';
+  font-family: Gillsans, sans-serif;
   padding: 1rem;
   overflow: hidden;
   justify-content: center;
@@ -451,6 +451,36 @@ p {
 
 .switch-field-datum input:checked + label {
   background-image: linear-gradient(rgb(203, 103, 153, 0) 45%, var(--rose) 45%);
+}
+
+.acts {
+  background-image: url(./assets/img/bg.png);
+}
+
+/* act tiles */
+
+.acts__list {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 2.4rem;
+  padding-bottom: 2rem;
+}
+
+.act__image {
+  border-radius: 10%;
+  position: relative;
+}
+
+.act__info {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  grid-template-rows: 1fr repeat(2, min-content);
 }
 
 /* footer */
@@ -523,11 +553,15 @@ p {
   height: 100%;
 }
 /* breakpoints */
-
-@media only screen and (min-width: 0) {
-}
-
 @media only screen and (min-width: 768px) {
+
+  .acts__list {
+    display: grid;
+    grid-gap: 2rem;
+
+    grid-template-rows: min-content auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .gratis {
     margin-left: 9rem;
@@ -600,6 +634,7 @@ p {
 
   .uitgelicht {
     padding-top: 0;
+    grid-area: uitgelicht;
   }
 
   .routes {
@@ -610,10 +645,6 @@ p {
   .vrijwilligers {
     grid-area: vrijwilligers;
     padding-right: 2rem;
-  }
-
-  .uitgelicht {
-    grid-area: uitgelicht;
   }
 
   .wrapper__titel {
@@ -875,6 +906,13 @@ p {
     width: 100%;
   }
 
+  /* tiles */
+
+  .acts__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* footer */
+
   .copyrights,
   .copyrightEva {
     padding-top: 2.4rem;
@@ -956,5 +994,10 @@ p {
 
   .acts__link {
     font-size: 1.8rem;
+  }
+
+  .acts__list {
+    grid-gap: 4rem;
+    width: 80vw;
   }
 }
