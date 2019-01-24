@@ -19,26 +19,24 @@ class ActsController extends Controller {
   public function programma() {
     $this->set('currentPage', 'programma');
       // filter
-      if (!empty($_GET['action']) && $_GET['action'] == 'filter') {
-        $activiteiten = $this->actDAO->search($_GET['dag']);
-        $this->set('dag',$_GET['dag']);
-      }else{
-        $activiteiten = $this->actDAO->search(1);
-        $this->set('dag', 1);
-      }
+    if (!empty($_GET['action']) && $_GET['action'] == 'filter') {
+      $activiteiten = $this->actDAO->search($_GET['dag']);
+      $this->set('dag',$_GET['dag']);
+      $this->set('currentDay', $_GET['dag']);
+    }else{
+      $activiteiten = $this->actDAO->search(1);
+      $this->set('dag', 1);
+      $this->set('currentDay', 1);
+    }
 
-      $this->set('activiteiten', $activiteiten);
+    $this->set('activiteiten', $activiteiten);
 
-      // if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
+    // if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
 
       //   header('Content-Type: application/json');
       //   echo json_encode($players);
       //   exit();
       // }
-
-
-
-
   }
   public function view() {
 

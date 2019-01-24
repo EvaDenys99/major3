@@ -336,8 +336,7 @@ p {
   display: grid;
   overflow: scroll;
   grid-gap: 2rem;
-  grid-template-columns: repeat(9, auto);
-  grid-template-rows: repeat(auto);
+  grid-template-columns: repeat(9, 10rem);
   grid-template-areas: 'baby wapper fiets vuur opelkaar vrouw zeplin lOnder rOnder';
 }
 
@@ -855,12 +854,12 @@ p {
 
   .wij {
     padding-left: 0%;
-    width: 40rem;
+    width: 30rem;
     align-self: center;
   }
 
   .wij__tekst {
-    width: 34rem;
+    width: 29rem;
   }
 
   .blik__deco__m {

@@ -1,14 +1,25 @@
 <main>
   <section class="filter">
     <form action="index.php" class="filter__form">
+    <input type="hidden" name="page" value="programma" />
     <input type="hidden" name="action" value="filter" />
         <div class="switch-field-datum">
           <div class="hidden">Datum</div>
-          <input type="radio" id="vrijdag" name="dag" value="1" checked/>
+          <input type="radio" id="vrijdag" name="dag" value="1"
+          <?php if($currentDay == 1){
+            echo 'checked';
+          } ?>
+          />
           <label for="vrijdag">24/08</label>
-          <input type="radio" id="zaterdag" name="dag" value="2" />
+          <input type="radio" id="zaterdag" name="dag" value="2"
+          <?php if($currentDay == 2){
+            echo 'checked';
+          } ?> />
           <label for="zaterdag">25/08</label>
-          <input type="radio" id="zondag" name="dag" value="3" />
+          <input type="radio" id="zondag" name="dag" value="3"
+          <?php if($currentDay == 3){
+            echo 'checked';
+          } ?> />
           <label for="zondag">26/08</label>
         </div>
 
