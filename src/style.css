@@ -499,19 +499,51 @@ p {
 }
 
 .act__info {
-  display: flex;
-  flex-direction: column;
+  height: 40vh;
+  position: relative;
 
-  position: absolute;
-  z-index: 3;
   display: grid;
+  padding: 2rem;
+
   grid-template-rows: 1fr repeat(2, min-content);
+}
+
+.act__detail-link {
+  text-decoration: none;
 }
 
 .act__image {
   border-radius: 10%;
+  width: 30rem;
+  position: absolute;
+  object-fit: cover;
 }
 
+.overlay {
+  background: var(--black);
+  mix-blend-mode: multiply;
+  width: 30rem;
+  height: 26.6rem;
+  border-radius: 10%;
+  opacity: .5;
+  position: absolute;
+}
+
+.act__titel2 {
+  width: 20rem;
+}
+
+.act__titel {
+  color: var(--white);
+  background-color: var(--rose);
+  padding: .2rem;
+}
+
+.act__uren {
+  color: var(--black);
+  background-color: var(--green-bleu);
+  padding: .5rem;
+}
 /* footer */
 
 .copyright {

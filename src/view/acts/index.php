@@ -47,10 +47,8 @@
     </section>
     <section class="uitgelicht">
       <div class="uitgelicht__titel2">
-      <h2 class="uitgelicht__titel">Uitgelicht</h2>
+        <h2 class="uitgelicht__titel">Uitgelicht</h2>
       </div>
-
-
       <div class="uitgelicht__info">
         <a href="index.php?page=detail&amp;id=8" class="uitgelicht__tile-link">
           <picture>

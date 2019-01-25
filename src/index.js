@@ -4,7 +4,6 @@ require('./style.css');
   const $filterForm = document.querySelector(`.filter__form`),
     $acts = document.querySelector(`.acts__list`);
   const $filter_div = document.querySelector(`.filter__div`);
-  const $voorstelling_div = document.querySelector(`.acts`);
 
   const init = () => {
     // return;
@@ -25,10 +24,6 @@ require('./style.css');
       act['id']
     }">
         <li class='act'>
-          <span class='act__info'>
-            <span class='act__uren'>${act['beginuur']}</span>
-            <span class='act__titel'>${act['titel']}</span>
-          </span>
           <picture>
             <source
               type="image/webp"
@@ -54,6 +49,15 @@ require('./style.css');
                   alt="Profile picture ${act['titel']}"
             />
           </picture>
+          <div class="overlay"></div>
+          <span class='act__info'>
+            <span class="act__uren2">
+              <span class='act__uren'>${act['beginuur']}</span>
+            </span>
+            <span class="act__titel2">
+              <span class='act__titel'>${act['titel']}</span>
+            </span>
+          </span>
         </li>
       </a>`;
   };
@@ -74,7 +78,7 @@ require('./style.css');
             <div class="switch-field field-act">
               <div class="hidden">Locatie</div>
               <input type="radio" id="alles2" name="locatie" value="" checked/>
-              <label for="alles2">alle</label>
+              <label for="alles2">Alle</label>
               <input type="radio" id="locatie1" name="locatie" value="4"
               <?php if($currentLocatie == 4){
                 echo 'checked';
@@ -128,7 +132,7 @@ require('./style.css');
               <div class="switch-field">
               <div class="hidden">Locatie</div>
               <input type="radio" id="alles2" name="locatie" value="" checked/>
-              <label for="alles2">alle</label>
+              <label for="alles2">Alle</label>
               <input type="radio" id="locatie1" name="locatie" value="2"
               <?php if($currentLocatie == 2){
                 echo 'checked';
@@ -156,7 +160,7 @@ require('./style.css');
                     <div class="switch-field">
                     <div class="hidden">Locatie</div>
                     <input type="radio" id="alles2" name="locatie" value="" checked/>
-                    <label for="alles2">alle</label>
+                    <label for="alles2">Alle</label>
                     <input type="radio" id="locatie1" name="locatie" value="2"
                     <?php if($currentLocatie == 2){
                       echo 'checked';

@@ -45,7 +45,7 @@
             <div class="switch-field field-act">
               <div class="hidden">Locatie</div>
               <input type="radio" id="alles2" name="locatie" value="" checked/>
-              <label for="alles2">alle</label>
+              <label for="alles2">Alle</label>
               <input type="radio" id="locatie1" name="locatie" value="4"
               <?php if($currentLocatie == 4){
                 echo 'checked';
@@ -86,7 +86,7 @@
             <div class="switch-field">
               <div class="hidden">Locatie</div>
               <input type="radio" id="alles2" name="locatie" value="" checked/>
-              <label for="alles2">alle</label>
+              <label for="alles2">Alle</label>
               <input type="radio" id="locatie1" name="locatie" value="2"
               <?php if($currentLocatie == 2){
                 echo 'checked';
@@ -103,55 +103,152 @@
         <span class="filter__form-submit"><input type="submit" value="Filter" class="filter__form__submit"></span>
     </form>
   </section>
-  <section class="acts">
-    <?php if (empty($activiteiten)): ?>
-        <p>Geen straatacts voor deze plaats op dit moment.</p>
-    <?php else: ?>
-      <ul class="acts__list">
-        <!-- php acts -->
-        <?php foreach($activiteiten as $act): ?>
-          <a class="act__detail-link" href="index.php?page=detail&amp;id=<?php echo $act['id']; ?>">
-            <li class='act'>
-              <span class='act__info'>
-                <span class='act__uren'><?php echo $act["beginuur"];?></span>
-                <span class='act__titel'><?php echo $act["titel"];?></span>
-              </span>
+
+  <div class="acts">
+    <section>
+      <?php if (empty($activiteiten)): ?>
+          <p>Geen straatacts voor deze plaats op dit moment.</p>
+      <?php else: ?>
+        <ul class="acts__list">
+          <!-- php acts -->
+          <?php foreach($activiteiten as $act): ?>
+            <a class="act__detail-link" href="index.php?page=detail&amp;id=<?php echo $act['id']; ?>">
+              <li class='act'>
               <picture>
+                    <source
+                      type="image/webp"
+                      srcset="<?php echo $act["img"];?>s.webp  306w,
+                              <?php echo $act["img"];?>m.webp  343w,
+                              <?php echo $act["img"];?>l.webp  404w"
+                      sizes="(min-width: 1024px) 10w,
+                            (min-width: 768px) 10w,
+                            (min-width: 0) 95w"
+                    />
+                    <source
+                      type="jpg"
+                      srcset="
+                            <?php echo $act["img"];?>s.jpg   306w,
+                            <?php echo $act["img"];?>m.jpg   343w,
+                            <?php echo $act["img"];?>l.jpg   404w
+                          "
+                      sizes="(min-width: 1024px) 10w,
+                                (min-width: 768px) 10w,
+                                (min-width: 0) 100w"
+                    />
+                    <img class="act__image"
+                          width= "100%"
+                          src="<?php echo $act["img"];?>l.jpg "
+                          alt="Profile picture <?php echo $act["titel"];?>"
+                    />
+                  </picture>
+                <div class="overlay"></div>
+                <span class='act__info'>
+                  <span class="act__uren2">
+                    <span class='act__uren'><?php echo $act["beginuur"];?></span>
+                  </span>
+                  <span class="act__titel2">
+                    <span class='act__titel'><?php echo $act["titel"];?></span>
+                  </span>
+
+                </span>
+              </li>
+            </a>
+          <?php endforeach; ?>
+        </ul>
+      <?php endif;?>
+    </section>
+
+    <section class="ook">
+        <h2 class="ook__titel">Uitgelichte van deze editie</h2>
+        <div class="ook__info">
+          <a href="index.php?page=detail&amp;id=8" class="ook__tile-link">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  assets/img/activiteiten/theatre_home_m.webp  313w,
+                  assets/img/activiteiten/theatre_home_l.webp  621w
+                "
+                sizes="(min-width: 1024px) 30vw,
+                      (min-width: 768px) 45vw,
+                      (min-width: 0) 97vw"
+              />
+              <source
+                type="jpg"
+                srcset="
+                  assets/img/activiteiten/theatre_home_m.jpg   313w,
+                  assets/img/activiteiten/theatre_home_l.jpg   621w
+                "
+                sizes="(min-width: 1024px) 30vw,
+                      (min-width: 768px) 45vw,
+                      (min-width: 0) 97vw"
+              />
+              <img
+                src="assets/img/activiteiten/theatre_home_l.jpg "
+                width= "100%"
+                class="uitgelicht__tile-theatre"
+                alt="Een kaart met een route aangeduid in het roze."
+              />
+            </picture>
+          </a>
+          <a href="index.php?page=detail&amp;id=50" class="ook__tile-link2">
+            <picture>
                 <source
                   type="image/webp"
-                  srcset="<?php echo $act["img"];?>s.webp  306w,
-                          <?php echo $act["img"];?>m.webp  343w,
-                          <?php echo $act["img"];?>l.webp  404w"
-                  sizes="(min-width: 1024px) 10w,
-                        (min-width: 768px) 10w,
-                        (min-width: 0) 95w"
+                  srcset="
+                    assets/img/activiteiten/medusa_home_m.webp  313w,
+                    assets/img/activiteiten/medusa_home_l.webp  418w
+                  "
+                  sizes="(min-width: 1024px) 30vw,
+                        (min-width: 768px) 45vw,
+                        (min-width: 0) 97vw"
                 />
                 <source
                   type="jpg"
                   srcset="
-                        <?php echo $act["img"];?>s.jpg   306w,
-                        <?php echo $act["img"];?>m.jpg   343w,
-                        <?php echo $act["img"];?>l.jpg   404w
-                      "
-                  sizes="(min-width: 1024px) 10w,
-                            (min-width: 768px) 10w,
-                            (min-width: 0) 100w"
+                    assets/img/activiteiten/medusa_home_m.jpg   313w,
+                    assets/img/activiteiten/medusa_home_l.jpg   418w
+                  "
+                  sizes="(min-width: 1024px) 30vw,
+                        (min-width: 768px) 45vw,
+                        (min-width: 0) 97vw"
                 />
-                <img class="act__image"
-                      width= "100%"
-                      src="<?php echo $act["img"];?>l.jpg "
-                      alt="Profile picture <?php echo $act["titel"];?>"
+                <img
+                  src="assets/img/activiteiten/medusa_home_l.jpg "
+                  width= "100%"
+                  class="uitgelicht__tile-medusa"
+                  alt="Een kaart met een route aangeduid in het roze."
                 />
-              </picture>
-            </li>
+            </picture>
           </a>
-        <?php endforeach; ?>
-      </ul>
-    <?php endif;?>
-  </section>
-  <div class="acts__download">
-    <a class="acts__link" href="assets/img/programma.pdf" download>Programma downloaden</a>
-    <a href="assets/img/programma.pdf" download><img src="assets/img/pijl.png" alt="pijltje naar rechts"></a>
-  </div>
+          <a href="index.php?page=detail&amp;id=21" class="uitgelicht__tile-link3">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="assets/img/activiteiten/krak_home_l.webp  621w"
+                sizes="(min-width: 1024px) 30vw,
+                      (min-width: 768px) 45vw"
+              />
+              <source
+                type="jpg"
+                srcset="assets/img/activiteiten/krak_home_l.jpg   621w"
+                sizes="(min-width: 1024px) 30vw,
+                      (min-width: 768px) 45vw"
+              />
+              <img
+                src="assets/img/activiteiten/krak_home_l.jpg "
+                width= "100%"
+                class="uitgelicht__tile-krak"
+                alt="Een kaart met een route aangeduid in het roze."
+              />
+            </picture>
+          </a>
+        </div>
+    </section>
 
+    <div class="acts__download">
+      <a class="acts__link" href="assets/img/programma.pdf" download>Programma downloaden</a>
+      <a href="assets/img/programma.pdf" download><img src="assets/img/pijl.png" alt="pijltje naar rechts"></a>
+    </div>
+  </div>
 </main>
