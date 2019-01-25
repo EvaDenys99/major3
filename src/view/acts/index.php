@@ -144,7 +144,7 @@
     <section class="wij">
       <p class="wij__ondertitel">De mensen van ISB</p>
       <h2 class="wij__titel">Wij zijn...</h2>
-      <p class="wij__tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim neque placerat dui sodales molestie. Nam efficitur erat laoreet nibh sollicitudin consequat. Vestibulum tristique convallis venenatis. </p>
+      <p class="wij__tekst">... een organisatie van het gemeentebestuur van Beveren in samenwerking met CC Ter Vesten. Wij doen ons best om u ook dit jaar weer een memorabel straattheaterfestival te geven!</p>
       <a href="index.php?page=index" class="wij__link">Lees meer over ons <img src="assets/img/pijl.png" alt="Een pijl gericht naar rechts"></a>
     </section>
     <section class="routes">
