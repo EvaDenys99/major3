@@ -498,17 +498,6 @@ p {
   padding-bottom: 2rem;
 }
 
-.act__image {
-  border-radius: 10%;
-  position: relative;
-}
-
-.act__image__detail {
-  position: relative;
-  margin-top: -3rem;
-  z-index: -1;
-}
-
 .act__info {
   display: flex;
   flex-direction: column;
@@ -517,6 +506,10 @@ p {
   z-index: 3;
   display: grid;
   grid-template-rows: 1fr repeat(2, min-content);
+}
+
+.act__image {
+  border-radius: 10%;
 }
 
 /* footer */
@@ -594,6 +587,23 @@ p {
   position: absolute;
   z-index: 2;
   padding: 1rem;
+}
+
+.act__detail-image {
+  border-radius: 10%;
+  position: relative;
+}
+
+.act__detail-image {
+  position: relative;
+  margin-top: -3rem;
+  z-index: -1;
+}
+
+.act__detail-titel {
+  position: absolute;
+  font-size: 1.6rem;
+  color: white;
 }
 
 /* breakpoints */

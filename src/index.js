@@ -7,7 +7,10 @@ require('./style.css');
   const init = () => {
     // return;
     if ($filterForm) {
-      $filterForm.addEventListener(`click`, handleSubmitFilterForm);
+      $filterForm.addEventListener(`submit`, e => {
+        e.target.preventDefault();
+      });
+      $filterForm.addEventListener(`click`, handleClickFilterForm);
     }
   };
 
@@ -53,9 +56,8 @@ require('./style.css');
       </a>`;
   };
 
-  const handleSubmitFilterForm = e => {
+  const handleClickFilterForm = e => {
     console.log('submit');
-    e.preventDefault();
     const qs = new URLSearchParams([
       ...new FormData($filterForm).entries()
     ]).toString();

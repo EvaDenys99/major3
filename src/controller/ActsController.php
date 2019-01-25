@@ -32,7 +32,7 @@ class ActsController extends Controller {
       $this->set('dag', 1);
       $this->set('soort', '');
       $this->set('locatie', '');
-      $this->set('currentDay',  2);
+      $this->set('currentDay',  1);
       $this->set('currentSoort', '');
       $this->set('currentLocatie', '');
     }

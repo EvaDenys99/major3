@@ -1,4 +1,5 @@
 <main>
+  <h2 class="hidden">Voorstellingen & Straatacts</h2>
   <section class="filter">
     <form action="index.php" class="filter__form">
     <input type="hidden" name="page" value="programma" />
@@ -102,7 +103,6 @@
     </form>
   </section>
   <section class="acts">
-    <h2 class="hidden">Voorstellingen & Straatacts</h2>
     <?php if (empty($activiteiten)): ?>
         <p>Geen straatacts voor deze plaats op dit moment.</p>
     <?php else: ?>
