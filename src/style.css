@@ -65,7 +65,7 @@ p {
 
 .site-header__top {
   background-color: var(--rose);
-  color: var(--white);
+  color: var(--black);
 
   display: grid;
   grid-template-columns: auto 1fr;
@@ -192,7 +192,7 @@ p {
 .uitgelicht__info {
   display: grid;
   grid-template-columns: 2% auto 2%;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: auto;
   grid-template-areas:
     '. tile1 .'
     '. tile2 .'
@@ -205,10 +205,20 @@ p {
 
 .uitgelicht__tile-link {
   grid-area: tile1;
+  height: 19rem;
 }
 
 .uitgelicht__tile-link2 {
   grid-area: tile2;
+  height: 19rem;
+}
+
+.uitgelicht__tile-medusa,
+.uitgelicht__tile-theatre,
+.uitgelicht__tile-krak {
+  height: 22.4rem;
+  object-fit: cover;
+  align-items: flex-end;
 }
 
 .uitgelicht__tile-link3 {
@@ -433,7 +443,7 @@ p {
   color: var(--black);
   font-size: 2.4rem;
   text-align: center;
-  padding: 1rem;
+  padding: 2.4rem;
 }
 
 .switch-field label {
@@ -442,7 +452,7 @@ p {
   color: var(--black);
   font-size: 1.4rem;
   text-align: center;
-  padding: 1rem;
+  padding: 2.4rem;
 }
 
 .switch-field input:checked + label {
@@ -457,6 +467,26 @@ p {
   background-image: url(./assets/img/bg.png);
 }
 
+.field-act {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+}
+
+.filter__form__submit {
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10%;
+  background-color: var(--green-bleu);
+}
+
+.filter__form-submit {
+  padding: 2.4rem;
+  display: flex;
+  justify-content: center;
+}
 /* act tiles */
 
 .acts__list {
@@ -471,6 +501,12 @@ p {
 .act__image {
   border-radius: 10%;
   position: relative;
+}
+
+.act__image__detail {
+  position: relative;
+  margin-top: -3rem;
+  z-index: -1;
 }
 
 .act__info {
@@ -552,8 +588,25 @@ p {
   width: 100%;
   height: 100%;
 }
+/* detail pagina */
+
+.detail__back {
+  position: absolute;
+  z-index: 2;
+  padding: 1rem;
+}
+
 /* breakpoints */
 @media only screen and (min-width: 768px) {
+
+  .filter__form__submit {
+    font-size: 2rem;
+  }
+
+  .field-act {
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+  }
 
   .acts__list {
     display: grid;
@@ -663,7 +716,7 @@ p {
 
   .uitgelicht__info {
     grid-template-columns: 10% repeat(2, auto) 10%;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: 22.4rem;
     grid-template-areas:
       '. tile1 tile2 .'
       '. buttn buttn .';
@@ -798,6 +851,15 @@ p {
 
 @media only screen and (min-width: 1024px) {
 
+  .filter__form__submit {
+    font-size: 2.4rem;
+  }
+
+  .field-act {
+    display: flex;
+    flex-direction: row;
+  }
+
   main {
     margin-left: auto;
     margin-right: auto;
@@ -842,7 +904,7 @@ p {
   .uitgelicht__info {
     display: grid;
     grid-template-columns: 30% 10% 20% 10%;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(2, 15rem);
     grid-template-areas:
       'tile1 editie tile2 tile2'
       'tile1 tile3 tile3 buttn';
@@ -859,10 +921,20 @@ p {
     justify-content: flex-start;
   }
 
+  .uitgelicht__tile-medusa,
+  .uitgelicht__tile-krak {
+    height: 15rem;
+  }
+
+  .uitgelicht__tile-theatre {
+    height: 30rem;
+  }
+
   .uitgelicht__link {
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 10%;
     padding: 2rem;
+    height: 15rem;
   }
 
   .uitgelicht__tile-link3 {
@@ -881,6 +953,7 @@ p {
     display: block;
     grid-area: editie;
     font-size: 3.6rem;
+    height: 15rem;
   }
 
   .wij {

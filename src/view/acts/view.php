@@ -1,4 +1,7 @@
 <section>
+  <a href="index.php?page=programma">
+    <img class="detail__back" src="assets/img/back.png" alt="Terug naar overzicht.">
+  </a>
   <picture>
     <source
       type="image/webp"
@@ -18,7 +21,7 @@
              (min-width: 768px) 10w,
              (min-width: 0) 10w"
       />
-      <img class="act__image"
+      <img class="act__image__detail"
            width= "100%"
            src="<?php echo $act["img"];?>l.jpg "
            alt="Profile picture <?php echo $act["titel"];?>"

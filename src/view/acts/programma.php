@@ -40,7 +40,7 @@
         </div>
 
         <?php if($currentSoort == 'Straatact'){ ?>
-          <div class="switch-field">
+          <div class="switch-field field-act">
             <div class="hidden">Locatie</div>
             <input type="radio" id="alles2" name="locatie" value="" checked/>
             <label for="alles2">alle</label>
@@ -97,8 +97,8 @@
             <label for="locatie2">Speelplein KA/BS De Bever</label>
           </div>
         <?php } ?>
+        <span class="filter__form-submit"><input type="submit" value="Filter" class="filter__form__submit"></span>
 
-        <input type="submit" value="Filter" class="form__submit input input--button">
     </form>
   </section>
   <section class="acts">

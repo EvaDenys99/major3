@@ -52,17 +52,87 @@
 
 
       <div class="uitgelicht__info">
-        <a href="" class="uitgelicht__tile-link">
-
-          <p>hallooo</p>
+        <a href="index.php?page=detail&amp;id=8" class="uitgelicht__tile-link">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/img/activiteiten/theatre_home_m.webp  313w,
+                assets/img/activiteiten/theatre_home_l.webp  621w
+              "
+              sizes="(min-width: 1024px) 30vw,
+                    (min-width: 768px) 45vw,
+                    (min-width: 0) 97vw"
+            />
+            <source
+              type="jpg"
+              srcset="
+                assets/img/activiteiten/theatre_home_m.jpg   313w,
+                assets/img/activiteiten/theatre_home_l.jpg   621w
+              "
+              sizes="(min-width: 1024px) 30vw,
+                    (min-width: 768px) 45vw,
+                    (min-width: 0) 97vw"
+            />
+            <img
+              src="assets/img/activiteiten/theatre_home_l.jpg "
+              width= "100%"
+              class="uitgelicht__tile-theatre"
+              alt="Een kaart met een route aangeduid in het roze."
+            />
+          </picture>
         </a>
-        <a href="" class="uitgelicht__tile-link2">
-
-          <p>hallooo2</p>
+        <a href="index.php?page=detail&amp;id=50" class="uitgelicht__tile-link2">
+          <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  assets/img/activiteiten/medusa_home_m.webp  313w,
+                  assets/img/activiteiten/medusa_home_l.webp  418w
+                "
+                sizes="(min-width: 1024px) 30vw,
+                      (min-width: 768px) 45vw,
+                      (min-width: 0) 97vw"
+              />
+              <source
+                type="jpg"
+                srcset="
+                  assets/img/activiteiten/medusa_home_m.jpg   313w,
+                  assets/img/activiteiten/medusa_home_l.jpg   418w
+                "
+                sizes="(min-width: 1024px) 30vw,
+                      (min-width: 768px) 45vw,
+                      (min-width: 0) 97vw"
+              />
+              <img
+                src="assets/img/activiteiten/medusa_home_l.jpg "
+                width= "100%"
+                class="uitgelicht__tile-medusa"
+                alt="Een kaart met een route aangeduid in het roze."
+              />
+          </picture>
         </a>
-        <a href="" class="uitgelicht__tile-link3">
-
-          <p>hallooo2</p>
+        <a href="index.php?page=detail&amp;id=21" class="uitgelicht__tile-link3">
+           <picture>
+            <source
+              type="image/webp"
+              srcset="assets/img/activiteiten/krak_home_l.webp  621w"
+              sizes="(min-width: 1024px) 30vw,
+                    (min-width: 768px) 45vw"
+            />
+            <source
+              type="jpg"
+              srcset="assets/img/activiteiten/krak_home_l.jpg   621w"
+              sizes="(min-width: 1024px) 30vw,
+                    (min-width: 768px) 45vw"
+            />
+            <img
+              src="assets/img/activiteiten/krak_home_l.jpg "
+              width= "100%"
+              class="uitgelicht__tile-krak"
+              alt="Een kaart met een route aangeduid in het roze."
+            />
+          </picture>
         </a>
         <p class="uitgelicht__editie2">13de editie</p>
         <a href="index.php?page=programma" class="uitgelicht__link">
@@ -159,7 +229,7 @@
       </div>
       <!-- video -->
       <div class="blik__video" >
-          <iframe  width=100% height= 100% src="https://www.youtube.com/embed/lrlscBtuSUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe title="Aftermovie editie 2017" width=100% height= 100% src="https://www.youtube.com/embed/lrlscBtuSUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <picture>
             <source

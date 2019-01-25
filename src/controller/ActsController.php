@@ -14,8 +14,8 @@ class ActsController extends Controller {
 
   public function index() {
     $this->set('currentPage', 'home');
-
   }
+
   public function programma() {
     $this->set('currentPage', 'programma');
       // filter
@@ -32,7 +32,7 @@ class ActsController extends Controller {
       $this->set('dag', 1);
       $this->set('soort', '');
       $this->set('locatie', '');
-      $this->set('currentDay',  1);
+      $this->set('currentDay',  2);
       $this->set('currentSoort', '');
       $this->set('currentLocatie', '');
     }
@@ -40,9 +40,8 @@ class ActsController extends Controller {
     $this->set('activiteiten', $activiteiten);
 
     if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
-
         header('Content-Type: application/json');
-        echo json_encode($players);
+        echo json_encode($activiteiten);
         exit();
     }
   }

@@ -59,7 +59,7 @@
     <footer>
       <section class="partners">
         <h2 class="hidden">Partners</h2>
-        <a href=""></a>
+        <!-- <a href=""></a> -->
         <picture class="partners__horeca">
           <source
             type="image/webp"
