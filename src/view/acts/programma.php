@@ -109,11 +109,11 @@
       <?php if (empty($activiteiten)): ?>
           <p>Geen straatacts voor deze plaats op dit moment.</p>
       <?php else: ?>
-        <ul class="acts__list">
+        <div class="acts__list">
           <!-- php acts -->
           <?php foreach($activiteiten as $act): ?>
+          <section class='act'>
             <a class="act__detail-link" href="index.php?page=detail&amp;id=<?php echo $act['id']; ?>">
-              <li class='act'>
               <picture>
                     <source
                       type="image/webp"
@@ -142,19 +142,18 @@
                     />
                   </picture>
                 <div class="overlay"></div>
-                <span class='act__info'>
+                <div class='act__info'>
                   <span class="act__uren2">
                     <span class='act__uren'><?php echo $act["beginuur"];?></span>
                   </span>
                   <span class="act__titel2">
                     <span class='act__titel'><?php echo $act["titel"];?></span>
                   </span>
-
-                </span>
-              </li>
+                </div>
             </a>
+          </section>
           <?php endforeach; ?>
-        </ul>
+        </div>
       <?php endif;?>
     </section>
 

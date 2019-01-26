@@ -533,7 +533,8 @@ p {
   width: 20rem;
 }
 
-.act__titel {
+.act__titel,
+.act__detail-titel-stukjes {
   color: var(--white);
   background-color: var(--rose);
   padding: .2rem;
@@ -616,59 +617,100 @@ p {
   position: absolute;
   z-index: 2;
   padding: 1rem;
+  grid-area: back;
 }
 
 .act__detail-image {
-  border-radius: 10%;
   position: relative;
-  margin-top: -3rem;
+  margin-top: -6rem;
   z-index: -1;
+  grid-area: foto;
+}
+
+.act__detail-image-border {
+  border-radius: 10%;
 }
 
 .act__detail-titel {
-  position: absolute;
+  margin-top: -5rem;
   font-size: 1.6rem;
-  color: white;
+  grid-area: titel;
 }
 
+.act__detail {
+  display: grid;
+  grid-gap: 2.4rem;
+  grid-template-columns: .1% repeat(2, 1fr);
+  grid-template-rows: 1% 20rem auto;
+  grid-template-areas:
+    '. back .'
+    'foto foto foto'
+    '. titel titel'
+    '. dag dag'
+    '. beschrijving beschrijving'
+    '. uren duur'
+    '. soort herkomst'
+    '. website website'
+    '. locatie locatie'
+    'kaart kaart kaart';
+}
+
+.detail__back-tekst,
+.detail__back-pijl2 {
+  display: none;
+}
+
+.act__detail-info-titel {
+  padding-bottom: .5rem;
+  font-weight: bold;
+}
+
+.act__detail-uren {
+  grid-area: uren;
+}
+
+.act__detail-uur {
+  line-height: 1.5rem;
+}
+
+.act__detail-duur {
+  grid-area: duur;
+}
+
+.act__detail-soort {
+  grid-area: soort;
+}
+
+.act__detail-herkomst {
+  grid-area: herkomst;
+}
+
+.act__detail-beschrijving {
+  grid-area: beschrijving;
+}
+
+.act__detail-website {
+  grid-area: website;
+}
+
+.act__detail-locatie {
+  grid-area: locatie;
+}
+
+.act__detail-locatie-img {
+  grid-area: kaart;
+}
+
+.act__detail-dagen {
+  grid-area: dag;
+  font-weight: bold;
+}
+
+.act__detail-driehoek {
+  display: none;
+}
 /* breakpoints */
 @media only screen and (min-width: 768px) {
-
-  .filter__form__submit {
-    font-size: 2rem;
-  }
-
-  .field-act {
-    grid-template-columns: repeat(4, auto);
-    justify-content: center;
-  }
-
-  .acts__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 70rem;
-  }
-
-  .gratis {
-    margin-left: 9rem;
-  }
-
-  .wrapper__gratis {
-    clip-path: polygon(53% 0, 20% 100%, 100% 100%);
-    padding-left: 6rem;
-    padding-right: 4rem;
-    padding-bottom: 1rem;
-    padding-top: 4rem;
-  }
-
-  .wrapper__date2 {
-    background-color: var(--green-bleu);
-    clip-path: polygon(48% 100%, 0 0, 100% 0);
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-bottom: 8rem;
-    padding-top: 2rem;
-  }
 
   .main {
     grid-gap: 1rem;
@@ -867,6 +909,42 @@ p {
     padding-left: 2rem;
   }
 
+  .filter__form__submit {
+    font-size: 2rem;
+  }
+
+  .field-act {
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+  }
+
+  .acts__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70rem;
+  }
+
+  .gratis {
+    margin-left: 9rem;
+  }
+
+  .wrapper__gratis {
+    clip-path: polygon(53% 0, 20% 100%, 100% 100%);
+    padding-left: 6rem;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+  }
+
+  .wrapper__date2 {
+    background-color: var(--green-bleu);
+    clip-path: polygon(48% 100%, 0 0, 100% 0);
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 8rem;
+    padding-top: 2rem;
+  }
+
   /* programma */
 
   .switch-field-datum label {
@@ -879,6 +957,36 @@ p {
 
   .acts__link {
     font-size: 1.6rem;
+  }
+
+  /* detail */
+
+  .act__detail-image {
+    margin-top: 0;
+  }
+
+  .act__detail-titel {
+    position: relative;
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
+  .act__detail-titel-stukjes {
+    color: var(--black);
+  }
+
+  .act__detail {
+    grid-template-columns: .1% repeat(3, 1fr);
+    grid-template-rows: 1% repeat(7, auto);
+    grid-template-areas:
+      '. back . .'
+      '. foto titel titel'
+      '. foto dag dag'
+      '. foto uren duur'
+      '. foto soort herkomst'
+      '. foto website website'
+      '. locatie beschrijving beschrijving'
+      '. kaart . .';
   }
 }
 
@@ -1025,6 +1133,66 @@ p {
     padding-top: 2.4rem;
     padding-left: 2rem;
   }
+
+  /* detail */
+
+  .detail__back {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .detail__back-tekst {
+    display: block;
+    padding-left: 1rem;
+    color: var(--dark-red);
+  }
+
+  .detail__back-pijl2 {
+    display: block;
+    transform: rotate(180deg);
+  }
+
+  .detail__back-pijl {
+    display: none;
+  }
+
+  .act__detail-titel {
+    font-size: 3.6rem;
+    align-content: center;
+  }
+
+  .act__detail-driehoek {
+    display: inline;
+    position: absolute;
+    z-index: -3;
+    margin-left: 10rem;
+    margin-top: 8rem;
+    transform: rotate(30deg);
+  }
+
+  .act__detail-titel-stukjes {
+    background-color: transparent;
+  }
+
+  .act__detail {
+    justify-content: center;
+    grid-gap: 2rem;
+    grid-template-columns: 1% 41rem repeat(3, 10rem) auto;
+    grid-template-rows: 1% repeat(7, auto);
+    grid-template-areas:
+      '. back back . . .'
+      '. titel titel titel titel titel'
+      '. foto dag dag dag .'
+      '. foto uren duur soort .'
+      '. foto herkomst herkomst herkomst .'
+      '. foto website website website .'
+      '. foto beschrijving beschrijving beschrijving .'
+      '. locatie beschrijving beschrijving beschrijving .'
+      '. kaart beschrijving beschrijving beschrijving .';
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1106,5 +1274,11 @@ p {
   .acts__list {
     grid-gap: 4rem;
     width: 80vw;
+  }
+
+  /* detail */
+
+  .act__detail-driehoek {
+    margin-left: 35rem;
   }
 }
