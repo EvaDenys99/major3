@@ -413,9 +413,6 @@ p {
   overflow: hidden;
   justify-content: center;
   display: flex;
-  -webkit-box-shadow:
-    inset 0 1px 3px rgba(0, 0, 0, .3),
-    0 1px rgba(255, 255, 255, .1);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3), 0 1px rgba(255, 255, 255, .1);
 }
 
@@ -490,16 +487,19 @@ p {
 /* act tiles */
 
 .acts__list {
-  display: flex;
-  flex-direction: column;
-  width: 90vw;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 2.4rem;
+
+  width: 30rem;
   margin: 0 auto;
+
   padding-top: 2.4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.4rem;
 }
 
 .act__info {
-  height: 40vh;
+  height: 26.6rem;
   position: relative;
 
   display: grid;
@@ -574,9 +574,6 @@ p {
 
 .partners {
   background-color: var(--white);
-  -webkit-box-shadow:
-    inset 0 1px 3px rgba(0, 0, 0, .3),
-    0 1px rgba(255, 255, 255, .1);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3), 0 1px rgba(255, 255, 255, .1);
   padding-top: 2.4rem;
   display: grid;
@@ -624,10 +621,6 @@ p {
 .act__detail-image {
   border-radius: 10%;
   position: relative;
-}
-
-.act__detail-image {
-  position: relative;
   margin-top: -3rem;
   z-index: -1;
 }
@@ -652,10 +645,8 @@ p {
 
   .acts__list {
     display: grid;
-    grid-gap: 2rem;
-
-    grid-template-rows: min-content auto;
     grid-template-columns: repeat(2, 1fr);
+    width: 70rem;
   }
 
   .gratis {
@@ -1025,6 +1016,7 @@ p {
 
   .acts__list {
     grid-template-columns: repeat(3, 1fr);
+    width: 96rem;
   }
   /* footer */
 
