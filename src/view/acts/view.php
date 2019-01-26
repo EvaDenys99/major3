@@ -1,9 +1,13 @@
 <section class="act__detail">
-  <a class="detail__back" href="index.php?page=programma">
-    <img class="detail__back-pijl" src="assets/img/back.png" alt="Terug naar overzicht.">
-    <img class="detail__back-pijl2" src="assets/img/pijl.png" width="12px" height="9px" alt="Een pijl gericht naar links">
-    <p class="detail__back-tekst">Terug naar overzicht.</p>
-  </a>
+  <?php $referer = filter_var($_SERVER['HTTP_REFERER'], FILTER_VALIDATE_URL);
+    if (!empty($referer)) {
+      echo '<a class="detail__back" href="'. $referer .'">
+              <img class="detail__back-pijl" src="assets/img/back.png" alt="Terug naar overzicht.">
+              <img class="detail__back-pijl2" src="assets/img/pijl.png" width="12px" height="9px" alt="Een pijl gericht naar links">
+              <p class="detail__back-tekst">Terug naar overzicht.</p>
+            </a>';
+    }
+  ?>
   <h2 class="act__detail-titel"><span class="act__detail-titel-stukjes"><?php echo $act["titel"];?></span></h2>
 
   <picture class="act__detail-image">
@@ -13,7 +17,7 @@
               <?php echo $act["img"];?>m.webp  343w,
               <?php echo $act["img"];?>l.webp  404w"
       sizes="(min-width: 1024px) 70vw,
-             (min-width: 768px) 70vw,
+             (min-width: 768px) 50vw,
              (min-width: 0) 100vw"
       />
     <source
@@ -22,7 +26,7 @@
               <?php echo $act["img"];?>m.jpg   343w,
               <?php echo $act["img"];?>l.jpg   404w"
       sizes="(min-width: 1024px) 70vw,
-             (min-width: 768px) 70vw,
+             (min-width: 768px) 50vw,
              (min-width: 0) 100vw"
       />
       <img

@@ -629,6 +629,8 @@ p {
 
 .act__detail-image-border {
   border-radius: 10%;
+  height: 30rem;
+  object-fit: cover;
 }
 
 .act__detail-titel {
@@ -965,6 +967,10 @@ p {
     margin-top: 0;
   }
 
+  .act__detail-image-border {
+    width: auto;
+  }
+
   .act__detail-titel {
     position: relative;
     margin-top: 0;
@@ -1280,5 +1286,6 @@ p {
 
   .act__detail-driehoek {
     margin-left: 35rem;
+    margin-top: 4rem;
   }
 }
