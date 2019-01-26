@@ -6,6 +6,13 @@
               <img class="detail__back-pijl2" src="assets/img/pijl.png" width="12px" height="9px" alt="Een pijl gericht naar links">
               <p class="detail__back-tekst">Terug naar overzicht.</p>
             </a>';
+    }else {
+      echo '<a class="detail__back" href="javascript:history.go(-1)">
+              <img class="detail__back-pijl" src="assets/img/back.png" alt="Terug naar overzicht.">
+              <img class="detail__back-pijl2" src="assets/img/pijl.png" width="12px" height="9px" alt="Een pijl gericht naar links">
+              <p class="detail__back-tekst">Terug naar overzicht.</p>
+            </a>';
+
     }
   ?>
   <h2 class="act__detail-titel"><span class="act__detail-titel-stukjes"><?php echo $act["titel"];?></span></h2>

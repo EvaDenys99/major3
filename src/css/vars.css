@@ -1,0 +1,15 @@
+:root {
+  --rose: #cb6799;
+  --light-rose: #ca7ba2;
+  --black: black;
+  --white: white;
+  --dark-rose: #b13372;
+  --dark-red: #600;
+  --green-bleu: #00c9b4;
+  --light-bleu: #01edd4;
+  --dark-grey: #a3a3a3;
+}
+
+@custom-media --m screen and (min-width: 768px);
+@custom-media --l screen and (min-width: 1024px);
+@custom-media --xl screen and (min-width: 1440px);

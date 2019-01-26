@@ -1,0 +1,66 @@
+.site-header__titel {
+  display: none;
+}
+
+.site-header__titelAfkort {
+  font-family: Gillsans, sans-serif;
+  font-size: 3.6rem;
+  text-decoration-line: none;
+  color: var(--white);
+}
+
+.site-header__top {
+  background-color: var(--rose);
+  color: var(--black);
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.site-header__date {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.site-header__menu {
+  background-color: var(--dark-rose);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'programma praktisch faq';
+  justify-items: center;
+  padding: 1rem;
+}
+
+.site-header__menutekst {
+  font-family: Avenir, sans-serif;
+  text-decoration-line: none;
+  color: var(--white);
+}
+
+.site-header__menutekst-actief {
+  font-family: Avenir, sans-serif;
+  position: relative;
+  color: var(--white);
+  text-decoration-line: underline;
+}
+
+.site-header__home {
+  display: none;
+}
+
+.site-header__programma {
+  grid-area: programma;
+}
+
+.site-header__praktisch {
+  grid-area: praktisch;
+}
+
+.site-header__faq {
+  grid-area: faq;
+}

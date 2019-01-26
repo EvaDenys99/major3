@@ -2,15 +2,18 @@ require('./style.css');
 
 {
   const $filterForm = document.querySelector(`.filter__form`),
-    $acts = document.querySelector(`.acts__list`);
-  const $filter_div = document.querySelector(`.filter__div`);
+    $acts = document.querySelector(`.acts__list`),
+    $filter_div = document.querySelector(`.filter__div`),
+    $filter_knop = document.querySelector(`.filter__form__submit`);
 
   const init = () => {
     // return;
+    // $filter_knop.classList.add(`hidden`);
     if ($filterForm) {
       $filterForm.addEventListener(`submit`, e => {
         e.target.preventDefault();
       });
+
       $filterForm.addEventListener(`click`, handleClickFilterForm);
     }
   };

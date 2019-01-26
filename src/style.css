@@ -1,16 +1,7 @@
 @import './css/reset.css';
-
-:root {
-  --rose: #cb6799;
-  --light-rose: #ca7ba2;
-  --black: black;
-  --white: white;
-  --dark-rose: #b13372;
-  --dark-red: #600;
-  --green-bleu: #00c9b4;
-  --light-bleu: #01edd4;
-  --dark-grey: #a3a3a3;
-}
+@import './css/vars.css';
+@import './css/site-header.css';
+@import './css/footer.css';
 
 html {
   font-size: 62.5%;
@@ -52,72 +43,7 @@ p {
   font-family: Avenir, sans-serif;
 }
 
-.site-header__titel {
-  display: none;
-}
-
-.site-header__titelAfkort {
-  font-family: Gillsans, sans-serif;
-  font-size: 3.6rem;
-  text-decoration-line: none;
-  color: var(--white);
-}
-
-.site-header__top {
-  background-color: var(--rose);
-  color: var(--black);
-
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  justify-items: center;
-}
-
-.site-header__date {
-  font-size: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-
-.site-header__menu {
-  background-color: var(--dark-rose);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 'programma praktisch faq';
-  justify-items: center;
-  padding: 1rem;
-}
-
-.site-header__menutekst {
-  font-family: Avenir, sans-serif;
-  text-decoration-line: none;
-  color: var(--white);
-}
-
-.site-header__menutekst-actief {
-  font-family: Avenir, sans-serif;
-  position: relative;
-  color: var(--white);
-  text-decoration-line: underline;
-}
-
-.site-header__home {
-  display: none;
-}
-
-.site-header__programma {
-  grid-area: programma;
-}
-
-.site-header__praktisch {
-  grid-area: praktisch;
-}
-
-.site-header__faq {
-  grid-area: faq;
-}
+/* header home pagina  */
 
 .wrapper__titel {
   font-size: 3rem;
@@ -188,8 +114,10 @@ p {
 
   font-weight: bold;
 }
+/* einde header home */
 
-.uitgelicht__info {
+.uitgelicht__info,
+.ook__info {
   display: grid;
   grid-template-columns: 2% auto 2%;
   grid-template-rows: auto;
@@ -201,6 +129,17 @@ p {
 
 .uitgelicht {
   padding-top: 5rem;
+}
+
+.uitgelicht__tekst,
+.uitgelicht__tekst2 {
+  height: 20rem;
+  position: absolute;
+
+  display: grid;
+  padding: 2rem;
+
+  grid-template-rows: 1fr repeat(2, min-content);
 }
 
 .uitgelicht__tile-link {
@@ -228,6 +167,13 @@ p {
 .uitgelicht__titel2 {
   display: flex;
   justify-content: center;
+}
+
+.ook__titel {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  padding-top: 2.4rem;
 }
 
 .uitgelicht__titel,
@@ -309,7 +255,7 @@ p {
 }
 
 .info__events__link {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: var(--dark-red);
   text-decoration: none;
 }
@@ -324,7 +270,16 @@ p {
 .acts__download {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
+  padding: 5rem;
+}
+
+/* foto slider op mobile */
+
+.blik__video {
+  width: 100%;
+  height: 100%;
 }
 
 .blik__titel2 {
@@ -404,7 +359,7 @@ p {
   justify-self: center;
 }
 
-/* programma */
+/* programma filter */
 
 .switch-field,
 .switch-field-datum {
@@ -459,6 +414,7 @@ p {
 .switch-field-datum input:checked + label {
   background-image: linear-gradient(rgb(203, 103, 153, 0) 45%, var(--rose) 45%);
 }
+/* programma  */
 
 .acts {
   background-image: url(./assets/img/bg.png);
@@ -534,83 +490,20 @@ p {
 }
 
 .act__titel,
-.act__detail-titel-stukjes {
+.act__detail-titel-stukjes,
+.uitgelicht__titel-tekst {
   color: var(--white);
   background-color: var(--rose);
   padding: .2rem;
 }
 
-.act__uren {
+.act__uren,
+.uitgelicht__soort-titel {
   color: var(--black);
   background-color: var(--green-bleu);
   padding: .5rem;
 }
-/* footer */
 
-.copyright {
-  font-size: 1.1rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.copyrightEva {
-  font-size: 1.1rem;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.info__contact__titel,
-.info__events__titel,
-.info__volgen__titel {
-  font-size: 1.8rem;
-}
-
-.info__contact,
-.info__events,
-.info__volgen {
-  padding-left: 1rem;
-  padding-top: 2.4rem;
-}
-
-.partners {
-  background-color: var(--white);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3), 0 1px rgba(255, 255, 255, .1);
-  padding-top: 2.4rem;
-  display: grid;
-  grid-gap: 1rem;
-
-  grid-template-columns: 1% repeat(3, auto) 1%;
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas:
-    '. horeca warande winkel .'
-    '. feesten feesten about .';
-}
-
-.partners__about {
-  grid-area: about;
-}
-
-.partners__feesten {
-  grid-area: feesten;
-}
-
-.partners__winkel {
-  grid-area: winkel;
-}
-
-.partners__warande {
-  grid-area: warande;
-}
-
-.partners__horeca {
-  grid-area: horeca;
-}
-
-.blik__video {
-  width: 100%;
-  height: 100%;
-}
 /* detail pagina */
 
 .detail__back {
@@ -712,7 +605,7 @@ p {
   display: none;
 }
 /* breakpoints */
-@media only screen and (min-width: 768px) {
+@media (--m) {
 
   .main {
     grid-gap: 1rem;
@@ -767,6 +660,11 @@ p {
     grid-area: uitgelicht;
   }
 
+  .uitgelicht__tekst,
+  .uitgelicht__tekst2 {
+    height: 24rem;
+  }
+
   .routes {
     grid-area: routes;
     padding-left: 2rem;
@@ -791,7 +689,8 @@ p {
     font-size: 3rem;
   }
 
-  .uitgelicht__info {
+  .uitgelicht__info,
+  .ook__info {
     grid-template-columns: 10% repeat(2, auto) 10%;
     grid-template-rows: 22.4rem;
     grid-template-areas:
@@ -810,6 +709,10 @@ p {
   .uitgelicht__titel,
   .vrijwilligers__titel,
   .blik__titel {
+    font-size: 3.6rem;
+  }
+
+  .ook__titel {
     font-size: 3.6rem;
   }
 
@@ -904,9 +807,18 @@ p {
     font-size: 1.8rem;
   }
 
-  .copyrights,
+  .copyright {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 2.4rem;
+  }
+
+  .copyrights {
+    padding-left: 2.4rem;
+  }
+
   .copyrightEva {
-    font-size: 1.4rem;
     padding-top: 2.4rem;
     padding-left: 2rem;
   }
@@ -996,7 +908,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (--l) {
 
   .filter__form__submit {
     font-size: 2.4rem;
@@ -1048,8 +960,17 @@ p {
     padding-right: 10rem;
   }
 
+  .ook__info {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 15rem);
+    grid-template-areas:
+      'tile1 tile2 tile2'
+      'tile1 tile3 tile3';
+
+    justify-content: center;
+  }
+
   .uitgelicht__info {
-    display: grid;
     grid-template-columns: 30% 10% 20% 10%;
     grid-template-rows: repeat(2, 15rem);
     grid-template-areas:
@@ -1057,6 +978,14 @@ p {
       'tile1 tile3 tile3 buttn';
 
     justify-content: center;
+  }
+
+  .uitgelicht__tekst {
+    height: 30rem;
+  }
+
+  .uitgelicht__tekst2 {
+    height: 15rem;
   }
 
   .uitgelicht__titel2 {
@@ -1201,7 +1130,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media (--xl) {
 
   .site-header__menutekst-actief,
   .site-header__menutekst {

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="assets/img/driehoek.png">
     <title>ISB</title>
     <script>
       WebFontConfig = {
@@ -68,8 +69,9 @@
               assets/img/home/horeca_m.webp  48w,
               assets/img/home/horeca_l.webp  95w
             "
-            sizes="(min-width: 768px) 7vw,
-                 (min-width: 0) 20vw"
+            sizes="
+                   (min-width: 768px) 10vw,
+                   (min-width: 0) 7vw"
           />
           <source
             type="jpg"
@@ -78,8 +80,9 @@
               assets/img/home/horeca_m.jpg   48w,
               assets/img/home/horeca_l.jpg   95w
             "
-            sizes="(min-width: 768px) 7vw,
-                 (min-width: 0) 20vw"
+            sizes="
+                   (min-width: 768px) 10vw,
+                   (min-width: 0) 7vw"
           />
           <img
             src="assets/img/home/horeca_l.jpg "
@@ -95,8 +98,9 @@
               assets/img/home/warande_m.webp  48w,
               assets/img/home/warande_l.webp  95w
             "
-            sizes="(min-width: 768px) 7vw,
-                 (min-width: 0) 20vw"
+            sizes="
+                   (min-width: 768px) 10vw,
+                   (min-width: 0) 7vw"
           />
           <source
             type="jpg"
@@ -105,8 +109,9 @@
               assets/img/home/warande_m.jpg   48w,
               assets/img/home/warande_l.jpg   95w
             "
-            sizes="(min-width: 768px) 7vw,
-                 (min-width: 0) 20vw"
+            sizes="
+                   (min-width: 768px) 10vw,
+                   (min-width: 0) 7vw"
           />
           <img
             src="assets/img/home/warande_l.jpg "
@@ -122,8 +127,9 @@
               assets/img/home/winkeldorp_m.webp  48w,
               assets/img/home/winkeldorp_l.webp  95w
             "
-            sizes="(min-width: 768px) 7vw,
-                 (min-width: 0) 20vw"
+            sizes="
+                   (min-width: 768px) 10vw,
+                   (min-width: 0) 7vw"
           />
           <source
             type="jpg"
@@ -132,8 +138,9 @@
               assets/img/home/winkeldorp_m.jpg   48w,
               assets/img/home/winkeldorp_l.jpg   95w
             "
-            sizes="(min-width: 768px) 7vw,
-                 (min-width: 0) 20vw"
+            sizes="
+                   (min-width: 768px) 10vw,
+                   (min-width: 0) 7vw"
           />
           <img
             src="assets/img/home/winkeldorp_l.jpg "
@@ -149,8 +156,9 @@
               assets/img/home/feesten_m.webp  48w,
               assets/img/home/feesten_l.webp  95w
             "
-            sizes="(min-width: 768px) 7vw,
-                 (min-width: 0) 20vw"
+            sizes="
+                   (min-width: 768px) 10vw,
+                   (min-width: 0) 7vw"
           />
           <source
             type="jpg"
@@ -159,8 +167,9 @@
               assets/img/home/feesten_m.jpg   48w,
               assets/img/home/feesten_l.jpg   95w
             "
-            sizes="(min-width: 768px) 7vw,
-                 (min-width: 0) 20vw"
+            sizes="
+                   (min-width: 768px) 10vw,
+                   (min-width: 0) 7vw"
           />
           <img
             src="assets/img/home/feesten_l.jpg "
@@ -176,8 +185,9 @@
               assets/img/home/about_m.webp  48w,
               assets/img/home/about_l.webp  95w
             "
-            sizes="(min-width: 768px) 7vw,
-                 (min-width: 0) 20vw"
+            sizes="
+                   (min-width: 768px) 10vw,
+                   (min-width: 0) 7vw"
           />
           <source
             type="jpg"
@@ -186,8 +196,9 @@
               assets/img/home/about_m.jpg   48w,
               assets/img/home/about_l.jpg   95w
             "
-            sizes="(min-width: 768px) 7vw,
-                 (min-width: 0) 20vw"
+            sizes="
+                   (min-width: 768px) 10vw,
+                   (min-width: 0) 7vw"
           />
           <img
             src="assets/img/home/about_l.jpg "
@@ -210,6 +221,9 @@
         </article>
         <article class="info__volgen">
           <h3 class="info__volgen__titel">Volg ons</h3>
+          <img src="assets/img/fb.png" alt="Facebook logo">
+          <img src="assets/img/insta.png" alt="Instagram logo">
+          <img src="assets/img/twitter.png" alt="Twitter logo">
         </article>
       </section>
       <section class="copyright">

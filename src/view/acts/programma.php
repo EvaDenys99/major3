@@ -160,7 +160,13 @@
     <section class="ook">
         <h2 class="ook__titel">Uitgelichte van deze editie</h2>
         <div class="ook__info">
-          <a href="index.php?page=detail&amp;id=8" class="ook__tile-link">
+          <a href="index.php?page=detail&amp;id=8" class="uitgelicht__tile-link">
+            <div class='uitgelicht__tekst'>
+              <span class="uitgelicht__soort">
+                <span class='uitgelicht__soort-titel'>Straatact</span>
+              </span>
+              <p class='uitgelicht__titel-tekst'>Close-act Theatre (NL) – i-Puppets</p>
+            </div>
             <picture>
               <source
                 type="image/webp"
@@ -189,8 +195,15 @@
                 alt="Een kaart met een route aangeduid in het roze."
               />
             </picture>
+
           </a>
-          <a href="index.php?page=detail&amp;id=50" class="ook__tile-link2">
+          <a href="index.php?page=detail&amp;id=50" class="uitgelicht__tile-link2">
+            <div class='uitgelicht__tekst2'>
+              <span class="uitgelicht__soort">
+                <span class='uitgelicht__soort-titel'>Straatact</span>
+              </span>
+              <p class='uitgelicht__titel-tekst'>Medusa’s World (NL) – Princesse de la pinq </p>
+            </div>
             <picture>
                 <source
                   type="image/webp"
@@ -221,6 +234,12 @@
             </picture>
           </a>
           <a href="index.php?page=detail&amp;id=21" class="uitgelicht__tile-link3">
+            <div class='uitgelicht__tekst2'>
+              <span class="uitgelicht__soort">
+                <span class='uitgelicht__soort-titel'>Voorstelling</span>
+              </span>
+              <p class='uitgelicht__titel-tekst'>Cie Krak (B) – Viva Victor</p>
+            </div>
             <picture>
               <source
                 type="image/webp"
