@@ -29,8 +29,13 @@ body {
   grid-template-columns: 100vw;
 }
 
-.hidden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
 }
 
 h1,
@@ -548,6 +553,10 @@ p {
     '. website website'
     '. locatie locatie'
     'kaart kaart kaart';
+}
+
+.act__detail-kaart-info {
+  font-weight: normal;
 }
 
 .detail__back-tekst,

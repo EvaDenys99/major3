@@ -3,12 +3,12 @@ require('./style.css');
 {
   const $filterForm = document.querySelector(`.filter__form`),
     $acts = document.querySelector(`.acts__list`),
-    $filter_div = document.querySelector(`.filter__div`),
-    $filter_knop = document.querySelector(`.filter__form__submit`);
+    $filterDiv = document.querySelector(`.filter__div`);
+  // const  $filter_knop = document.querySelector(`.filter__form__submit`);
 
   const init = () => {
     // return;
-    // $filter_knop.classList.add(`hidden`);
+    // $filter_knop.classList.add(`visually-hidden`);
     if ($filterForm) {
       $filterForm.addEventListener(`submit`, e => {
         e.target.preventDefault();
@@ -69,9 +69,9 @@ require('./style.css');
 
   const handleClickFilterForm = e => {
     if (e.toElement.innerHTML === 'Straatact') {
-      $filter_div.innerHTML = `
+      $filterDiv.innerHTML = `
               <div class="switch-field">
-                <div class="hidden">Soort</div>
+                <div class="visually-hidden">Soort</div>
                 <input type="radio" id="alles" name="soort" value="" checked>
                 <label for="alles">alle</label>
                 <input type="radio" id="voorstelling" name="soort" value="Voorstelling"/>
@@ -80,7 +80,7 @@ require('./style.css');
                 <label for="straatact">Straatact</label>
               </div>
               <div class="switch-field field-act">
-                <div class="hidden">Locatie</div>
+                <div class="visually-hidden">Locatie</div>
                 <input type="radio" id="alles2" name="locatie" value="" checked/>
                 <label for="alles2">Alle</label>
                 <input type="radio" id="locatie1" name="locatie" value="4"
@@ -122,9 +122,9 @@ require('./style.css');
     }
 
     if (e.toElement.innerHTML === 'Voorstelling') {
-      $filter_div.innerHTML = `
+      $filterDiv.innerHTML = `
               <div class="switch-field">
-                <div class="hidden">Soort</div>
+                <div class="visually-hidden">Soort</div>
                 <input type="radio" id="alles" name="soort" class="alle" value="" checked />
                 <label for="alles">alle</label>
                 <input type="radio" id="voorstelling" name="soort" value="Voorstelling" checked />
@@ -134,7 +134,7 @@ require('./style.css');
               </div>
               <?php if($currentSoort == 'Voorstelling'){ ?>
                 <div class="switch-field">
-                <div class="hidden">Locatie</div>
+                <div class="visually-hidden">Locatie</div>
                 <input type="radio" id="alles2" name="locatie" value="" checked/>
                 <label for="alles2">Alle</label>
                 <input type="radio" id="locatie1" name="locatie" value="2"
@@ -150,9 +150,9 @@ require('./style.css');
               </div>`;
     }
     if (e.toElement.innerHTML === 'alle') {
-      $filter_div.innerHTML = `
+      $filterDiv.innerHTML = `
                   <div class="switch-field">
-                    <div class="hidden">Soort</div>
+                    <div class="visually-hidden">Soort</div>
                     <input type="radio" id="alles" name="soort" class="alle" value="" checked />
                     <label for="alles">alle</label>
                     <input type="radio" id="voorstelling" name="soort" value="Voorstelling"/>
@@ -162,7 +162,7 @@ require('./style.css');
                   </div>
                   <?php if($currentSoort == 'Voorstelling'){ ?>
                     <div class="switch-field">
-                    <div class="hidden">Locatie</div>
+                    <div class="visually-hidden">Locatie</div>
                     <input type="radio" id="alles2" name="locatie" value="" checked/>
                     <label for="alles2">Alle</label>
                     <input type="radio" id="locatie1" name="locatie" value="2"

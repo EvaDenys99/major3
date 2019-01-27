@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,11 +40,12 @@
 
       <nav>
         <ul class="site-header__menu">
-          <li class="site-header__home"><a href="index.php?page=index" class="site-header__menutekst<?php if($currentPage == 'home') echo '-actief';?>">Home</a></li>
-          <li class="site-header__programma"><a href="index.php?page=programma" class="site-header__menutekst<?php if($currentPage == 'programma') echo '-actief';?>">Programma</a></li>
+          <li class="site-header__home"><a href="index.php?page=index" class="site-header__menutekst<?php if($currentPage == 'home') echo '-actief';?>" <?php if($currentPage == 'home') echo 'aria-describedby="current"';?>><q lang="en">Home</q></a></li>
+          <li class="site-header__programma"><a href="index.php?page=programma" class="site-header__menutekst<?php if($currentPage == 'programma') echo '-actief';?>" <?php if($currentPage == 'programma') echo 'aria-describedby="current"';?>>Programma</a></li>
           <li class="site-header__praktisch"><a href="index.php?page=index" class="site-header__menutekst">Praktisch</a></li>
-          <li class="site-header__faq"><a href="index.php?page=index" class="site-header__menutekst">FAQ</a></li>
+          <li class="site-header__faq"><a href="index.php?page=index" class="site-header__menutekst"><q lang="en">FAQ</q></a></li>
         </ul>
+        <div hidden id="current"><q lang="en">Current page</q></div>
       </nav>
       <?php
       if(!empty($_SESSION['error'])) {
@@ -55,11 +56,12 @@
       }
       ?>
     </header>
-
-    <?php echo $content ?>
+    <main id="main">
+      <?php echo $content ?>
+    </main>
     <footer>
       <section class="partners">
-        <h2 class="hidden">Partners</h2>
+        <h2 class="visually-hidden">Partners</h2>
         <!-- <a href=""></a> -->
         <picture class="partners__horeca">
           <source
@@ -228,8 +230,8 @@
       </section>
       <section class="copyright">
         <p class="copyrights">©internationaal Straattheaterfestival Beveren</p>
-        <p class="copyrights">Cookie policy</p>
-        <p class="copyrights">Privacy policy</p>
+        <p class="copyrights"><q lang="en">Cookie policy</q></p>
+        <p class="copyrights"><q lang="en">Privacy policy</q></p>
         <p class="copyrights">Algemene voorwaarden</p>
       </section>
       <p class="copyrightEva">©Eva Denys</p>

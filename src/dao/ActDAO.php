@@ -5,7 +5,7 @@ require_once( __DIR__ . '/DAO.php');
 class ActDAO extends DAO {
 
   public function selectById($id) {
-    $sql = "SELECT activiteiten.*, isb_hours.beginuur, isb_days.dagen, locaties.locatie, locaties.kaart_img
+    $sql = "SELECT activiteiten.*, isb_hours.beginuur, isb_days.dagen, locaties.locatie, locaties.kaart_img, locaties.kaart_link
             FROM activiteiten
             INNER JOIN isb_hours
             ON activiteiten.id = isb_hours.activiteit_id

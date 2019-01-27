@@ -1,5 +1,4 @@
-<main>
-  <div class="main">
+<div class="main">
     <section class="wrapper">
       <div class="wrapper__info">
         <h2 class="wrapper__titel"> <span class="wrapper__titel__behind"> Internationaal </span> <br> <span class="wrapper__titel__behind"> Straattheaterfestival </span><br> <span class="wrapper__titel__behind">Beveren</span></h2>
@@ -92,7 +91,7 @@
             <span class="uitgelicht__soort">
               <span class='uitgelicht__soort-titel'>Straatact</span>
             </span>
-            <p class='uitgelicht__titel-tekst'>Medusa’s World (NL) – Princesse de la pinq </p>
+            <p class='uitgelicht__titel-tekst'>Medusa’s World (NL) – Princesse de la pinq</p>
           </div>
           <picture>
               <source
@@ -559,5 +558,5 @@
           </picture>
         </div>
       </div>
-    </section>
-</main>
+</section>
+

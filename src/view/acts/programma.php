@@ -1,22 +1,22 @@
-<main>
-  <h2 class="hidden">Voorstellingen & Straatacts</h2>
+
+<h2 class="visually-hidden">Voorstellingen & Straatacts</h2>
   <section class="filter">
-    <form action="index.php" class="filter__form">
+    <form action="index.php" class="filter__form" role="form">
     <input type="hidden" name="page" value="programma" />
     <input type="hidden" name="action" value="filter" />
         <div class="switch-field-datum">
-          <div class="hidden">Datum</div>
+          <div class="visually-hidden">Datum</div>
           <input type="radio" id="vrijdag" name="dag" value="1"
           <?php if($currentDay == 1){
             echo 'checked';
           } ?>
           />
-          <label for="vrijdag">24/08</label>
+          <label  for="vrijdag">24/08</label>
           <input type="radio" id="zaterdag" name="dag" value="2"
           <?php if($currentDay == 2){
             echo 'checked';
           } ?> />
-          <label for="zaterdag">25/08</label>
+          <label  for="zaterdag">25/08</label>
           <input type="radio" id="zondag" name="dag" value="3"
           <?php if($currentDay == 3){
             echo 'checked';
@@ -26,7 +26,7 @@
 
         <div class="filter__div">
           <div class="switch-field">
-            <div class="hidden">Soort</div>
+            <div class="visually-hidden">Soort</div>
             <input type="radio" id="alles" name="soort" value="" checked />
             <label for="alles">alle</label>
             <input type="radio" id="voorstelling" name="soort" value="Voorstelling"
@@ -43,7 +43,7 @@
 
           <?php if($currentSoort == 'Straatact'){ ?>
             <div class="switch-field field-act">
-              <div class="hidden">Locatie</div>
+              <div class="visually-hidden">Locatie</div>
               <input type="radio" id="alles2" name="locatie" value="" checked/>
               <label for="alles2">Alle</label>
               <input type="radio" id="locatie1" name="locatie" value="4"
@@ -84,7 +84,7 @@
             </div>
           <?php }else{ ?>
             <div class="switch-field">
-              <div class="hidden">Locatie</div>
+              <div class="visually-hidden">Locatie</div>
               <input type="radio" id="alles2" name="locatie" value="" checked/>
               <label for="alles2">Alle</label>
               <input type="radio" id="locatie1" name="locatie" value="2"
@@ -268,5 +268,5 @@
       <a class="acts__link" href="assets/img/programma.pdf" download>Programma downloaden</a>
       <a href="assets/img/programma.pdf" download><img src="assets/img/pijl.png" alt="pijltje naar rechts"></a>
     </div>
-  </div>
-</main>
+</div>
+
