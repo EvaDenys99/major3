@@ -534,9 +534,9 @@ p {
 
 .act__detail {
   display: grid;
-  grid-gap: 2.4rem;
+  grid-gap: 1.2rem;
   grid-template-columns: .1% repeat(2, 1fr);
-  grid-template-rows: 1% 20rem auto;
+  grid-template-rows: 1% auto-fill;
   grid-template-areas:
     '. back .'
     'foto foto foto'
@@ -586,6 +586,7 @@ p {
 
 .act__detail-website {
   grid-area: website;
+  height: auto;
 }
 
 .act__detail-locatie {
@@ -894,15 +895,16 @@ p {
   }
 
   .act__detail {
+    grid-gap: 1.2rem;
     grid-template-columns: .1% repeat(3, 1fr);
-    grid-template-rows: 1% repeat(7, auto);
+    grid-template-rows: 1% auto-fill;
     grid-template-areas:
       '. back . .'
       '. foto titel titel'
       '. foto dag dag'
       '. foto uren duur'
       '. foto soort herkomst'
-      '. foto website website'
+      '. . website website'
       '. locatie beschrijving beschrijving'
       '. kaart . .';
   }
@@ -1114,7 +1116,7 @@ p {
 
   .act__detail {
     justify-content: center;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     grid-template-columns: 1% 41rem repeat(3, 10rem) auto;
     grid-template-rows: 1% repeat(7, auto);
     grid-template-areas:
@@ -1123,8 +1125,8 @@ p {
       '. foto dag dag dag .'
       '. foto uren duur soort .'
       '. foto herkomst herkomst herkomst .'
-      '. foto website website website .'
-      '. foto beschrijving beschrijving beschrijving .'
+      '. . website website website .'
+      '. . beschrijving beschrijving beschrijving .'
       '. locatie beschrijving beschrijving beschrijving .'
       '. kaart beschrijving beschrijving beschrijving .';
   }

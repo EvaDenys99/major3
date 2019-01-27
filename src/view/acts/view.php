@@ -61,10 +61,12 @@
     <p class="act__detail-info-titel">Herkomst</p>
     <p><?php echo $act["herkomst"];?></p>
   </div>
-  <div class="act__detail-website">
-    <p class="act__detail-info-titel">Website</p>
-    <a href="https://<?php echo $act['website'];?>"><?php echo $act["website"];?></a>
-  </div>
+  <?php if($act['website'] !== 'N.v.t.') :?>
+    <div class="act__detail-website">
+      <p class="act__detail-info-titel">Website</p>
+      <a href="https://<?php echo $act['website'];?>"><?php echo $act["website"];?></a>
+    </div>
+  <?php endif; ?>
   <div class="act__detail-beschrijving">
     <p class="act__detail-info-titel">Beschrijving</p>
     <p><?php echo $act["beschrijving"];?></p>
@@ -73,5 +75,28 @@
     <p class="act__detail-info-titel">Locatie</p>
     <p><?php echo $act["locatie"];?></p>
   </div>
-  <p class="act__detail-locatie-img"><?php echo $act["kaart_img"];?></p>
+  <p ></p>
+  <picture class="act__detail-locatie-img">
+    <source
+      type="image/webp"
+      srcset="<?php echo $act["kaart_img"];?>s.webp  349w,
+              <?php echo $act["kaart_img"];?>l.webp  583w"
+      sizes="(min-width: 1024px) 70vw,
+             (min-width: 768px) 50vw,
+             (min-width: 0) 100vw"
+      />
+    <source
+      type="png"
+      srcset="<?php echo $act["kaart_img"];?>s.png   349w,
+              <?php echo $act["kaart_img"];?>l.png   583w"
+      sizes="(min-width: 1024px) 70vw,
+             (min-width: 768px) 50vw,
+             (min-width: 0) 100vw"
+      />
+      <img
+          width="100%"
+           src="<?php echo $act["kaart_img"];?>l.png "
+           alt="Kaart <?php echo $act["locatie"];?>"
+      />
+  </picture>
 </section>

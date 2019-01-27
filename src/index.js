@@ -68,7 +68,6 @@ require('./style.css');
   };
 
   const handleClickFilterForm = e => {
-    console.log(e);
     if (e.toElement.innerHTML === 'Straatact') {
       $filter_div.innerHTML = `
               <div class="switch-field">
