@@ -1,0 +1,105 @@
+/* detail pagina */
+
+.detail__back {
+  position: absolute;
+  z-index: 2;
+  padding: 1rem;
+  grid-area: back;
+}
+
+.act__detail-image {
+  position: relative;
+  margin-top: -6rem;
+  z-index: -1;
+  grid-area: foto;
+}
+
+.act__detail-image-border {
+  border-radius: 10%;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.act__detail-titel {
+  margin-top: -5rem;
+  font-size: 1.6rem;
+  grid-area: titel;
+}
+
+.act__detail {
+  display: grid;
+  grid-gap: 1.2rem;
+  grid-template-columns: .1% repeat(2, 1fr);
+  grid-template-rows: 1% auto-fill;
+  grid-template-areas:
+    '. back .'
+    'foto foto foto'
+    '. titel titel'
+    '. dag dag'
+    '. beschrijving beschrijving'
+    '. uren duur'
+    '. soort herkomst'
+    '. website website'
+    '. locatie locatie'
+    'kaart kaart kaart';
+}
+
+.act__detail-kaart-info {
+  font-weight: normal;
+}
+
+.detail__back-tekst,
+.detail__back-pijl2 {
+  display: none;
+}
+
+.act__detail-info-titel {
+  padding-bottom: .5rem;
+  font-weight: bold;
+}
+
+.act__detail-uren {
+  grid-area: uren;
+}
+
+.act__detail-uur {
+  line-height: 1.5rem;
+}
+
+.act__detail-duur {
+  grid-area: duur;
+}
+
+.act__detail-soort {
+  grid-area: soort;
+}
+
+.act__detail-herkomst {
+  grid-area: herkomst;
+}
+
+.act__detail-beschrijving {
+  grid-area: beschrijving;
+}
+
+.act__detail-website {
+  grid-area: website;
+  height: auto;
+}
+
+.act__detail-locatie {
+  grid-area: locatie;
+}
+
+.act__detail-locatie-img {
+  grid-area: kaart;
+}
+
+.act__detail-dagen {
+  grid-area: dag;
+  font-weight: bold;
+}
+
+.act__detail-driehoek {
+  display: none;
+}

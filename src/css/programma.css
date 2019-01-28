@@ -1,0 +1,144 @@
+/* programma filter */
+
+.switch-field,
+.switch-field-datum {
+  font-family: Gillsans, Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3), 0 1px rgba(255, 255, 255, .1);
+}
+
+.switch-field input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: auto;
+  width: auto;
+  border: 0;
+  overflow: hidden;
+}
+
+.switch-field-datum input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: auto;
+  width: auto;
+  border: 0;
+  overflow: hidden;
+}
+
+.switch-field-datum label {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 2.4rem;
+}
+
+.switch-field label {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 2.4rem;
+}
+
+.switch-field input:checked + label {
+  background-image: linear-gradient(rgb(203, 103, 153, 0) 45%, var(--rose) 45%);
+}
+
+.switch-field-datum input:checked + label {
+  background-image: linear-gradient(rgb(203, 103, 153, 0) 45%, var(--rose) 45%);
+}
+/* programma  */
+
+.acts {
+  background-image: url(../assets/img/bg.png);
+}
+
+.field-act {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+}
+
+.filter__form__submit {
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10%;
+  background-color: var(--green-bleu);
+}
+
+.filter__form-submit {
+  padding: 2.4rem;
+  display: flex;
+  justify-content: center;
+}
+/* act tiles */
+
+.acts__list {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 2.4rem;
+
+  width: 30rem;
+  margin: 0 auto;
+
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.act__info {
+  height: 26.6rem;
+  position: relative;
+
+  display: grid;
+  padding: 2rem;
+
+  grid-template-rows: 1fr repeat(2, min-content);
+}
+
+.act__detail-link {
+  text-decoration: none;
+}
+
+.act__image {
+  border-radius: 10%;
+  width: 30rem;
+  position: absolute;
+  object-fit: cover;
+}
+
+.overlay {
+  background: var(--black);
+  mix-blend-mode: multiply;
+  width: 30rem;
+  height: 26.6rem;
+  border-radius: 10%;
+  opacity: .5;
+  position: absolute;
+}
+
+.act__titel2 {
+  width: 20rem;
+}
+
+.act__titel,
+.act__detail-titel-stukjes,
+.uitgelicht__titel-tekst {
+  color: var(--white);
+  background-color: var(--rose);
+  padding: .2rem;
+}
+
+.act__uren,
+.uitgelicht__soort-titel {
+  color: var(--black);
+  background-color: var(--green-bleu);
+  padding: .5rem;
+}

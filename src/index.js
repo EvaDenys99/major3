@@ -1,4 +1,5 @@
 require('./style.css');
+require('./assets/fonts/fonts.css');
 
 {
   const $filterForm = document.querySelector(`.filter__form`),

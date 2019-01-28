@@ -1,17 +1,20 @@
 <div class="main">
     <section class="wrapper">
       <div class="wrapper__info">
-        <h2 class="wrapper__titel"> <span class="wrapper__titel__behind"> Internationaal </span> <br> <span class="wrapper__titel__behind"> Straattheaterfestival </span><br> <span class="wrapper__titel__behind">Beveren</span></h2>
+        <div class="wrapper__titel">
+          <h2><span class="wrapper__titel__behind"> Internationaal </span> <br> <span class="wrapper__titel__behind"> Straattheaterfestival </span><br> <span class="wrapper__titel__behind">Beveren</span></h2>
+        </div>
         <div class="wrapper__date">
-          <div class="wrapper__date2">
-            <p class="wrapper__dateN">24-25-26</p>
-            <p class="wrapper__dateM">augustus</p>
-            <p class="wrapper__dateY">2018</p>
+          <div class="wrapper__date3">
+            <div class="wrapper__date2">
+              <p class="wrapper__dateN">24-25-26</p>
+              <p class="wrapper__dateM">augustus</p>
+              <p class="wrapper__dateY">2018</p>
+            </div>
           </div>
           <div class="gratis">
-          <p class="wrapper__gratis">Gratis</p>
+            <p class="wrapper__gratis">Gratis</p>
           </div>
-
         </div>
       </div>
       <picture>
@@ -22,9 +25,9 @@
               assets/img/home/headerfoto_m.webp  775w,
               assets/img/home/headerfoto_l.webp  1441w
             "
-            sizes="(min-width: 1024px) 50h,
-                  (min-width: 768px) 50w,
-                  (min-width: 0) 100w"
+            sizes="(min-width: 1024px) 50vw,
+                  (min-width: 768px) 50vw,
+                  (min-width: 0) 100vw"
           />
           <source
             type="jpg"
@@ -33,12 +36,13 @@
               assets/img/home/headerfoto_m.jpg   775w,
               assets/img/home/headerfoto_l.jpg   1441w
             "
-            sizes="(min-width: 1024px) 50h,
-                  (min-width: 768px) 50w,
-                  (min-width: 0) 100w"
+            sizes="(min-width: 1024px) 50vw,
+                  (min-width: 768px) 50vw,
+                  (min-width: 0) 100vw"
           />
           <img class="wrapper__image"
             width= "100%"
+            height="100%"
             src="assets/img/home/headerfoto_l.jpg "
             alt="Een zwart wit foto van een straatvoorstelling met een verklede man met daarover een roze schijn."
           />
@@ -80,8 +84,9 @@
             <img
               src="assets/img/activiteiten/theatre_home_l.jpg "
               width= "100%"
+              height= "100%"
               class="uitgelicht__tile-theatre"
-              alt="Een kaart met een route aangeduid in het roze."
+              alt="de profiel foto van Close-act theatre - i Puppets."
             />
           </picture>
 
@@ -117,8 +122,9 @@
               <img
                 src="assets/img/activiteiten/medusa_home_l.jpg "
                 width= "100%"
+                height= "100%"
                 class="uitgelicht__tile-medusa"
-                alt="Een kaart met een route aangeduid in het roze."
+                alt="Profiel foto van Medusa's world - Princesse de la pinq."
               />
           </picture>
         </a>
@@ -145,8 +151,9 @@
             <img
               src="assets/img/activiteiten/krak_home_l.jpg "
               width= "100%"
+              height= "100%"
               class="uitgelicht__tile-krak"
-              alt="Een kaart met een route aangeduid in het roze."
+              alt="Profiel foto van Cie krak - viva victor."
             />
           </picture>
         </a>
@@ -244,10 +251,43 @@
         <h2 class="blik__titel">Een blik op 2017</h2>
       </div>
       <!-- video -->
-      <div class="blik__video" >
-          <iframe title="Aftermovie editie 2017" width=100% height= 100% src="https://www.youtube.com/embed/lrlscBtuSUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="blik__vid">
+        <a class="blik__video" target="_blank" href="https://www.youtube.com/watch?v=lrlscBtuSUM&feature=youtu.be">
+          <picture >
+                <source
+                  type="image/webp"
+                  srcset="
+                  assets/img/yt_s.webp  320w,
+                  assets/img/yt_m.webp  484w,
+                  assets/img/yt.webp  802w
+                  "
+                  sizes="(min-width: 1440px) 45vw,
+                        (min-width: 1024px) 43vw,
+                        (min-width: 768px) 55vw,
+                        (min-width: 0) 100vw"
+                />
+                <source
+                  type="png"
+                  srcset="
+                  assets/img/yt_s.png  320w,
+                  assets/img/yt_m.png  484w,
+                  assets/img/yt.png   802w
+                  "
+                  sizes="(min-width: 1440px) 45vw,
+                        (min-width: 1024px) 43vw,
+                        (min-width: 768px) 55vw,
+                        (min-width: 0) 100vw"
+                />
+                <img
+                  width= "100%"
+                  src="assets/img/yt.png "
+                  alt="Een link naar de aftermovie van 2017 op youtube."
+                />
+              </picture>
+        </a>
       </div>
-      <picture>
+
+      <picture class="blik__deco">
             <source
               type="image/webp"
               srcset="
@@ -267,12 +307,12 @@
                      (min-width: 0) 40vw"
             />
             <img
-            class="blik__deco"
+
               src="assets/img/lijnen.png "
               alt="decoratie lijnen."
             />
           </picture>
-          <picture>
+          <picture class="blik__deco__m">
             <source
               type="image/webp"
               srcset="
@@ -290,7 +330,6 @@
                     (min-width: 0) 20vw"
             />
             <img
-            class="blik__deco__m"
               src="assets/img/lijnen_m.png "
               alt="decoratie lijnen."
             />
@@ -408,7 +447,7 @@
             <img
               src="assets/img/home/vrouw_l.jpg "
               width= "100%"
-              alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
+              alt="Een zwart wit sfeerfoto van een opgemaakte vrouw met een staf."
             />
           </picture>
         </div>
@@ -437,7 +476,7 @@
             <img
               src="assets/img/home/zeplin_l.jpg "
               width= "100%"
-              alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
+              alt="Een zwart wit sfeerfoto van een zeplin."
             />
           </picture>
         </div>
@@ -466,7 +505,7 @@
             <img
               src="assets/img/home/opElkaar_l.jpg "
               width= "100%"
-              alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
+              alt="Een zwart wit sfeerfoto van 2 mensen op elkaar op een fiets."
             />
           </picture>
         </div>
@@ -495,7 +534,7 @@
             <img
               src="assets/img/home/lOnder_l.jpg "
               width= "100%"
-              alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
+              alt="Een zwart wit sfeerfoto van een schreeuwende viking."
             />
           </picture>
         </div>
@@ -524,7 +563,7 @@
             <img
               src="assets/img/home/rOnder_l.jpg "
               width= "100%"
-              alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
+              alt="Een zwart wit sfeerfoto van 2 personen."
             />
           </picture>
         </div>
@@ -553,7 +592,7 @@
             <img
               src="assets/img/home/vuur_l.jpg "
               width= "100%"
-              alt="Een zwart wit sfeerfoto van een baby met een persoon van een voorstelling."
+              alt="Een zwart wit sfeerfoto van een vuuract."
             />
           </picture>
         </div>

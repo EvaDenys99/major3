@@ -39,5 +39,8 @@
     "last 2 versions",
     "> 1%",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "html-critical-webpack-plugin": "^2.1.0"
+  }
 }

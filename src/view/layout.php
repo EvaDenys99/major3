@@ -17,11 +17,12 @@
       (function(d) {
         var wf = d.createElement("script"),
           s = d.scripts[0];
-        wf.src = "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
+        wf.src = "https://ajax.googleapis.com/ajax/libs/webfont/webfont.js";
         wf.async = true;
         s.parentNode.insertBefore(wf, s);
       })(document);
     </script>
+
 
     <?php echo $css;?>
 
@@ -62,152 +63,161 @@
     <footer>
       <section class="partners">
         <h2 class="visually-hidden">Partners</h2>
-        <!-- <a href=""></a> -->
-        <picture class="partners__horeca">
-          <source
-            type="image/webp"
-            srcset="
-              assets/img/home/horeca_s.webp  55w,
-              assets/img/home/horeca_m.webp  48w,
-              assets/img/home/horeca_l.webp  95w
-            "
-            sizes="
-                   (min-width: 768px) 10vw,
-                   (min-width: 0) 7vw"
-          />
-          <source
-            type="jpg"
-            srcset="
-              assets/img/home/horeca_s.jpg   55w,
-              assets/img/home/horeca_m.jpg   48w,
-              assets/img/home/horeca_l.jpg   95w
-            "
-            sizes="
-                   (min-width: 768px) 10vw,
-                   (min-width: 0) 7vw"
-          />
-          <img
-            src="assets/img/home/horeca_l.jpg "
-            width= "100%"
-            alt="Een zwart wit foto van het logo van de parnter horeca."
-          />
+        <a  class="partners__horeca" target="_blank" href="https://www.beveren.be/vrije-tijd/verenigingen/horeca-beveren">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/img/home/horeca_s.webp  55w,
+                assets/img/home/horeca_m.webp  48w,
+                assets/img/home/horeca_l.webp  95w
+              "
+              sizes="
+                    (min-width: 768px) 10vw,
+                    (min-width: 0) 7vw"
+            />
+            <source
+              type="jpg"
+              srcset="
+                assets/img/home/horeca_s.jpg   55w,
+                assets/img/home/horeca_m.jpg   48w,
+                assets/img/home/horeca_l.jpg   95w
+              "
+              sizes="
+                    (min-width: 768px) 10vw,
+                    (min-width: 0) 7vw"
+            />
+            <img
+              src="assets/img/home/horeca_l.jpg "
+              width= "100%"
+              alt="Een zwart wit foto van het logo van de parnter horeca."
+            />
+          </picture>
+        </a>
+        <a class="partners__warande" target="_blank" href="http://www.warandeshopping.be/">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/img/home/warande_s.webp  55w,
+                assets/img/home/warande_m.webp  48w,
+                assets/img/home/warande_l.webp  95w
+              "
+              sizes="
+                    (min-width: 768px) 10vw,
+                    (min-width: 0) 7vw"
+            />
+            <source
+              type="jpg"
+              srcset="
+                assets/img/home/warande_s.jpg   55w,
+                assets/img/home/warande_m.jpg   48w,
+                assets/img/home/warande_l.jpg   95w
+              "
+              sizes="
+                    (min-width: 768px) 10vw,
+                    (min-width: 0) 7vw"
+            />
+            <img
+              src="assets/img/home/warande_l.jpg "
+              width= "100%"
+              alt="Een zwart wit foto van het logo van de parnter warande."
+            />
+          </picture>
+        </a>
+       <a class="partners__winkel" target="_blank" href="http://www.winkeldorp.be/">
+        <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/img/home/winkeldorp_s.webp  55w,
+                assets/img/home/winkeldorp_m.webp  48w,
+                assets/img/home/winkeldorp_l.webp  95w
+              "
+              sizes="
+                    (min-width: 768px) 10vw,
+                    (min-width: 0) 7vw"
+            />
+            <source
+              type="jpg"
+              srcset="
+                assets/img/home/winkeldorp_s.jpg   55w,
+                assets/img/home/winkeldorp_m.jpg   48w,
+                assets/img/home/winkeldorp_l.jpg   95w
+              "
+              sizes="
+                    (min-width: 768px) 10vw,
+                    (min-width: 0) 7vw"
+            />
+            <img
+              src="assets/img/home/winkeldorp_l.jpg "
+              width= "100%"
+              alt="Een zwart wit foto van het logo van de parnter winkeldorp."
+            />
+          </picture>
+       </a>
+       <a class="partners__feesten" target="_blank" href="http://beverse-feesten.be/">
+        <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/img/home/feesten_s.webp  55w,
+                assets/img/home/feesten_m.webp  48w,
+                assets/img/home/feesten_l.webp  95w
+              "
+              sizes="
+                    (min-width: 768px) 10vw,
+                    (min-width: 0) 7vw"
+            />
+            <source
+              type="jpg"
+              srcset="
+                assets/img/home/feesten_s.jpg   55w,
+                assets/img/home/feesten_m.jpg   48w,
+                assets/img/home/feesten_l.jpg   95w
+              "
+              sizes="
+                    (min-width: 768px) 10vw,
+                    (min-width: 0) 7vw"
+            />
+            <img
+              src="assets/img/home/feesten_l.jpg "
+              width= "100%"
+              alt="Een zwart wit foto van het logo van de parnter feesten."
+            />
         </picture>
-        <picture class="partners__warande">
-          <source
-            type="image/webp"
-            srcset="
-              assets/img/home/warande_s.webp  55w,
-              assets/img/home/warande_m.webp  48w,
-              assets/img/home/warande_l.webp  95w
-            "
-            sizes="
-                   (min-width: 768px) 10vw,
-                   (min-width: 0) 7vw"
-          />
-          <source
-            type="jpg"
-            srcset="
-              assets/img/home/warande_s.jpg   55w,
-              assets/img/home/warande_m.jpg   48w,
-              assets/img/home/warande_l.jpg   95w
-            "
-            sizes="
-                   (min-width: 768px) 10vw,
-                   (min-width: 0) 7vw"
-          />
-          <img
-            src="assets/img/home/warande_l.jpg "
-            width= "100%"
-            alt="Een zwart wit foto van het logo van de parnter warande."
-          />
-        </picture>
-        <picture class="partners__winkel">
-          <source
-            type="image/webp"
-            srcset="
-              assets/img/home/winkeldorp_s.webp  55w,
-              assets/img/home/winkeldorp_m.webp  48w,
-              assets/img/home/winkeldorp_l.webp  95w
-            "
-            sizes="
-                   (min-width: 768px) 10vw,
-                   (min-width: 0) 7vw"
-          />
-          <source
-            type="jpg"
-            srcset="
-              assets/img/home/winkeldorp_s.jpg   55w,
-              assets/img/home/winkeldorp_m.jpg   48w,
-              assets/img/home/winkeldorp_l.jpg   95w
-            "
-            sizes="
-                   (min-width: 768px) 10vw,
-                   (min-width: 0) 7vw"
-          />
-          <img
-            src="assets/img/home/winkeldorp_l.jpg "
-            width= "100%"
-            alt="Een zwart wit foto van het logo van de parnter winkeldorp."
-          />
-        </picture>
-        <picture class="partners__feesten">
-          <source
-            type="image/webp"
-            srcset="
-              assets/img/home/feesten_s.webp  55w,
-              assets/img/home/feesten_m.webp  48w,
-              assets/img/home/feesten_l.webp  95w
-            "
-            sizes="
-                   (min-width: 768px) 10vw,
-                   (min-width: 0) 7vw"
-          />
-          <source
-            type="jpg"
-            srcset="
-              assets/img/home/feesten_s.jpg   55w,
-              assets/img/home/feesten_m.jpg   48w,
-              assets/img/home/feesten_l.jpg   95w
-            "
-            sizes="
-                   (min-width: 768px) 10vw,
-                   (min-width: 0) 7vw"
-          />
-          <img
-            src="assets/img/home/feesten_l.jpg "
-            width= "100%"
-            alt="Een zwart wit foto van het logo van de parnter feesten."
-          />
-        </picture>
-        <picture class="partners__about">
-          <source
-            type="image/webp"
-            srcset="
-              assets/img/home/about_s.webp  55w,
-              assets/img/home/about_m.webp  48w,
-              assets/img/home/about_l.webp  95w
-            "
-            sizes="
-                   (min-width: 768px) 10vw,
-                   (min-width: 0) 7vw"
-          />
-          <source
-            type="jpg"
-            srcset="
-              assets/img/home/about_s.jpg   55w,
-              assets/img/home/about_m.jpg   48w,
-              assets/img/home/about_l.jpg   95w
-            "
-            sizes="
-                   (min-width: 768px) 10vw,
-                   (min-width: 0) 7vw"
-          />
-          <img
-            src="assets/img/home/about_l.jpg "
-            width= "100%"
-            alt="Een zwart wit foto van het logo van de parnter about."
-          />
-        </picture>
+       </a>
+       <a class="partners__about" target="_blank" href="http://www.aouteneclats.be/">
+        <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/img/home/about_s.webp  55w,
+                assets/img/home/about_m.webp  48w,
+                assets/img/home/about_l.webp  95w
+              "
+              sizes="
+                    (min-width: 768px) 10vw,
+                    (min-width: 0) 7vw"
+            />
+            <source
+              type="jpg"
+              srcset="
+                assets/img/home/about_s.jpg   55w,
+                assets/img/home/about_m.jpg   48w,
+                assets/img/home/about_l.jpg   95w
+              "
+              sizes="
+                    (min-width: 768px) 10vw,
+                    (min-width: 0) 7vw"
+            />
+            <img
+              src="assets/img/home/about_l.jpg "
+              width= "100%"
+              alt="Een zwart wit foto van het logo van de parnter about."
+            />
+          </picture>
+       </a>
       </section>
       <section class="info">
         <article class="info__contact">

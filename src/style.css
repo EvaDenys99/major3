@@ -2,6 +2,9 @@
 @import './css/vars.css';
 @import './css/site-header.css';
 @import './css/footer.css';
+@import './css/home.css';
+@import './css/programma.css';
+@import './css/detail.css';
 
 html {
   font-size: 62.5%;
@@ -41,579 +44,13 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Gillsans, sans-serif;
+  font-family: Gillsans, Arial, Helvetica, sans-serif;
 }
 
 p {
-  font-family: Avenir, sans-serif;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
-/* header home pagina  */
-
-.wrapper__titel {
-  font-size: 3rem;
-  color: var(--white);
-  padding-left: 1rem;
-}
-
-.wrapper__titel__behind {
-  background-image: linear-gradient(rgb(203, 103, 153, 0) 55%, var(--rose) 45%);
-}
-
-.wrapper__image {
-  position: relative;
-  width: 100vw;
-}
-
-.wrapper__info {
-  color: var(--white);
-  position: absolute;
-  z-index: 3;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: auto;
-}
-
-.wrapper {
-  padding-bottom: 2.4rem;
-}
-
-.wrapper__date {
-  color: var(--black);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding-right: 4rem;
-}
-
-.wrapper__date2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  background-color: var(--green-bleu);
-  clip-path: polygon(48% 100%, 0 0, 100% 0);
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-bottom: 4rem;
-  padding-top: 2rem;
-}
-
-.wrapper__dateN {
-  font-weight: bold;
-}
-
-.gratis {
-  margin-left: 4rem;
-  position: absolute;
-}
-
-.wrapper__gratis {
-  background-color: var(--rose);
-
-  clip-path: polygon(57% 0, 15% 100%, 100% 100%);
-  padding-left: 4rem;
-  padding-right: 2rem;
-  padding-bottom: 1rem;
-  padding-top: 4rem;
-
-  font-weight: bold;
-}
-/* einde header home */
-
-.uitgelicht__info,
-.ook__info {
-  display: grid;
-  grid-template-columns: 2% auto 2%;
-  grid-template-rows: auto;
-  grid-template-areas:
-    '. tile1 .'
-    '. tile2 .'
-    '. buttn .';
-}
-
-.uitgelicht {
-  padding-top: 5rem;
-}
-
-.uitgelicht__tekst,
-.uitgelicht__tekst2 {
-  height: 20rem;
-  position: absolute;
-
-  display: grid;
-  padding: 2rem;
-
-  grid-template-rows: 1fr repeat(2, min-content);
-}
-
-.uitgelicht__tile-link {
-  grid-area: tile1;
-  height: 19rem;
-}
-
-.uitgelicht__tile-link2 {
-  grid-area: tile2;
-  height: 19rem;
-}
-
-.uitgelicht__tile-medusa,
-.uitgelicht__tile-theatre,
-.uitgelicht__tile-krak {
-  height: 22.4rem;
-  object-fit: cover;
-  align-items: flex-end;
-}
-
-.uitgelicht__tile-link3 {
-  display: none;
-}
-
-.uitgelicht__titel2 {
-  display: flex;
-  justify-content: center;
-}
-
-.ook__titel {
-  display: flex;
-  justify-content: center;
-  font-size: 2.5rem;
-  padding-top: 2.4rem;
-}
-
-.uitgelicht__titel,
-.blik__titel {
-  font-size: 2.5rem;
-  background-image: url(./assets/img/deco_uit.png);
-  background-repeat: no-repeat;
-}
-
-.uitgelicht__link {
-  grid-area: buttn;
-  text-decoration: none;
-  font-size: 1.4rem;
-  background-color: var(--green-bleu);
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  padding: 1rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.uitgelicht__editie {
-  color: var(--light-bleu);
-}
-
-.uitgelicht__editie2 {
-  display: none;
-}
-
-.uitgelicht__meer {
-  color: var(--black);
-}
-
-.wij {
-  padding-top: 2.4rem;
-  padding-left: 1rem;
-}
-
-.routes,
-.vrijwilligers {
-  padding-top: 2.4rem;
-}
-
-.routes__info,
-.vrijwilligers__info {
-  padding-left: 1rem;
-}
-
-.wij__ondertitel {
-  font-size: 1.6rem;
-  color: var(--dark-grey);
-}
-
-.wij__titel {
-  font-size: 2.5rem;
-  color: var(--rose);
-}
-
-.routes__titel,
-.vrijwilligers__titel {
-  font-size: 2.5rem;
-}
-
-.wij__tekst,
-.routes__tekst,
-.vrijwilligers__tekst {
-  font-size: 1.6rem;
-  padding-bottom: 2.4rem;
-}
-
-.wij__link,
-.routes__link,
-.vrijwilligers__link {
-  font-size: 1.4rem;
-  color: var(--dark-red);
-  text-decoration: none;
-}
-
-.info__events__link {
-  font-size: 1.4rem;
-  color: var(--dark-red);
-  text-decoration: none;
-}
-
-.acts__link {
-  font-size: 1.4rem;
-  color: var(--dark-red);
-  text-decoration: none;
-  padding-right: 1rem;
-}
-
-.acts__download {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: 5rem;
-}
-
-/* foto slider op mobile */
-
-.blik__video {
-  width: 100%;
-  height: 100%;
-}
-
-.blik__titel2 {
-  display: flex;
-  justify-content: center;
-  padding-top: 2.4rem;
-}
-
-.blik__deco {
-  position: absolute;
-}
-
-.blik__deco__m {
-  display: none;
-}
-
-.blik__slider {
-  padding: 2.5rem;
-  display: grid;
-  overflow: scroll;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(9, 10rem);
-  grid-template-areas: 'baby wapper fiets vuur opelkaar vrouw zeplin lOnder rOnder';
-}
-
-.blik__slider-slide-image__baby {
-  grid-area: baby;
-  align-self: flex-end;
-  justify-self: center;
-}
-
-.blik__image__wapper {
-  grid-area: wapper;
-  align-self: flex-end;
-  justify-self: center;
-}
-
-.blik__image__eenwieler {
-  grid-area: fiets;
-  align-self: flex-end;
-  justify-self: center;
-}
-
-.blik__image__vrouw {
-  grid-area: vrouw;
-  align-self: flex-end;
-  justify-self: center;
-}
-
-.blik__image__zeplin {
-  grid-area: zeplin;
-  align-self: flex-end;
-  justify-self: center;
-}
-
-.blik__image__vuur {
-  grid-area: vuur;
-  align-self: flex-end;
-  justify-self: center;
-}
-
-.blik__image__opELkaar {
-  grid-area: opelkaar;
-  align-self: flex-end;
-  justify-self: center;
-}
-
-.blik__image__lOnder {
-  grid-area: lOnder;
-  z-index: -1;
-  justify-self: center;
-}
-
-.blik__image__rOnder {
-  grid-area: rOnder;
-  z-index: -1;
-  justify-self: center;
-}
-
-/* programma filter */
-
-.switch-field,
-.switch-field-datum {
-  font-family: Gillsans, sans-serif;
-  padding: 1rem;
-  overflow: hidden;
-  justify-content: center;
-  display: flex;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3), 0 1px rgba(255, 255, 255, .1);
-}
-
-.switch-field input {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  height: auto;
-  width: auto;
-  border: 0;
-  overflow: hidden;
-}
-
-.switch-field-datum input {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  height: auto;
-  width: auto;
-  border: 0;
-  overflow: hidden;
-}
-
-.switch-field-datum label {
-  display: inline-block;
-  background-color: var(--white);
-  color: var(--black);
-  font-size: 2.4rem;
-  text-align: center;
-  padding: 2.4rem;
-}
-
-.switch-field label {
-  display: inline-block;
-  background-color: var(--white);
-  color: var(--black);
-  font-size: 1.4rem;
-  text-align: center;
-  padding: 2.4rem;
-}
-
-.switch-field input:checked + label {
-  background-image: linear-gradient(rgb(203, 103, 153, 0) 45%, var(--rose) 45%);
-}
-
-.switch-field-datum input:checked + label {
-  background-image: linear-gradient(rgb(203, 103, 153, 0) 45%, var(--rose) 45%);
-}
-/* programma  */
-
-.acts {
-  background-image: url(./assets/img/bg.png);
-}
-
-.field-act {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto;
-}
-
-.filter__form__submit {
-  font-size: 1.6rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 10%;
-  background-color: var(--green-bleu);
-}
-
-.filter__form-submit {
-  padding: 2.4rem;
-  display: flex;
-  justify-content: center;
-}
-/* act tiles */
-
-.acts__list {
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 2.4rem;
-
-  width: 30rem;
-  margin: 0 auto;
-
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
-}
-
-.act__info {
-  height: 26.6rem;
-  position: relative;
-
-  display: grid;
-  padding: 2rem;
-
-  grid-template-rows: 1fr repeat(2, min-content);
-}
-
-.act__detail-link {
-  text-decoration: none;
-}
-
-.act__image {
-  border-radius: 10%;
-  width: 30rem;
-  position: absolute;
-  object-fit: cover;
-}
-
-.overlay {
-  background: var(--black);
-  mix-blend-mode: multiply;
-  width: 30rem;
-  height: 26.6rem;
-  border-radius: 10%;
-  opacity: .5;
-  position: absolute;
-}
-
-.act__titel2 {
-  width: 20rem;
-}
-
-.act__titel,
-.act__detail-titel-stukjes,
-.uitgelicht__titel-tekst {
-  color: var(--white);
-  background-color: var(--rose);
-  padding: .2rem;
-}
-
-.act__uren,
-.uitgelicht__soort-titel {
-  color: var(--black);
-  background-color: var(--green-bleu);
-  padding: .5rem;
-}
-
-/* detail pagina */
-
-.detail__back {
-  position: absolute;
-  z-index: 2;
-  padding: 1rem;
-  grid-area: back;
-}
-
-.act__detail-image {
-  position: relative;
-  margin-top: -6rem;
-  z-index: -1;
-  grid-area: foto;
-}
-
-.act__detail-image-border {
-  border-radius: 10%;
-  height: 30rem;
-  object-fit: cover;
-}
-
-.act__detail-titel {
-  margin-top: -5rem;
-  font-size: 1.6rem;
-  grid-area: titel;
-}
-
-.act__detail {
-  display: grid;
-  grid-gap: 1.2rem;
-  grid-template-columns: .1% repeat(2, 1fr);
-  grid-template-rows: 1% auto-fill;
-  grid-template-areas:
-    '. back .'
-    'foto foto foto'
-    '. titel titel'
-    '. dag dag'
-    '. beschrijving beschrijving'
-    '. uren duur'
-    '. soort herkomst'
-    '. website website'
-    '. locatie locatie'
-    'kaart kaart kaart';
-}
-
-.act__detail-kaart-info {
-  font-weight: normal;
-}
-
-.detail__back-tekst,
-.detail__back-pijl2 {
-  display: none;
-}
-
-.act__detail-info-titel {
-  padding-bottom: .5rem;
-  font-weight: bold;
-}
-
-.act__detail-uren {
-  grid-area: uren;
-}
-
-.act__detail-uur {
-  line-height: 1.5rem;
-}
-
-.act__detail-duur {
-  grid-area: duur;
-}
-
-.act__detail-soort {
-  grid-area: soort;
-}
-
-.act__detail-herkomst {
-  grid-area: herkomst;
-}
-
-.act__detail-beschrijving {
-  grid-area: beschrijving;
-}
-
-.act__detail-website {
-  grid-area: website;
-  height: auto;
-}
-
-.act__detail-locatie {
-  grid-area: locatie;
-}
-
-.act__detail-locatie-img {
-  grid-area: kaart;
-}
-
-.act__detail-dagen {
-  grid-area: dag;
-  font-weight: bold;
-}
-
-.act__detail-driehoek {
-  display: none;
-}
 /* breakpoints */
 @media (--m) {
 
@@ -690,13 +127,27 @@ p {
     padding-left: 5rem;
   }
 
-  .wrapper__date {
-    padding-right: 10rem;
+  .wrapper__date3 {
+    background-image: url(./assets/img/driehoeken_m.png);
+    background-repeat: no-repeat;
+    width: 31.9rem;
+    height: 25.9rem;
+  }
+
+  .gratis {
+    margin-top: 2rem;
+    margin-right: 3rem;
+  }
+
+  .wrapper__gratis {
+    margin-right: 2rem;
   }
 
   .wrapper__date2,
   .wrapper__gratis {
     font-size: 3rem;
+    margin-top: 3rem;
+    margin-left: -5rem;
   }
 
   .uitgelicht__info,
@@ -759,15 +210,6 @@ p {
     grid-template-areas: '. horeca warande winkel feesten about .';
   }
 
-  .blik__deco {
-    display: none;
-  }
-
-  .blik__deco__m {
-    display: block;
-    position: absolute;
-  }
-
   .blik__slider {
     padding-left: 0;
     overflow: hidden;
@@ -780,10 +222,17 @@ p {
   }
 
   .blik__video {
-    width: 50%;
-    height: 25%;
     position: absolute;
-    margin-left: 20rem;
+  }
+
+  .blik__deco {
+    display: none;
+  }
+
+  .blik__vid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
 
   .info {
@@ -846,27 +295,6 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 70rem;
-  }
-
-  .gratis {
-    margin-left: 9rem;
-  }
-
-  .wrapper__gratis {
-    clip-path: polygon(53% 0, 20% 100%, 100% 100%);
-    padding-left: 6rem;
-    padding-right: 4rem;
-    padding-bottom: 1rem;
-    padding-top: 4rem;
-  }
-
-  .wrapper__date2 {
-    background-color: var(--green-bleu);
-    clip-path: polygon(48% 100%, 0 0, 100% 0);
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-bottom: 8rem;
-    padding-top: 2rem;
   }
 
   /* programma */
@@ -968,7 +396,6 @@ p {
 
   .wrapper__info {
     grid-gap: 10rem;
-    padding-right: 10rem;
   }
 
   .ook__info {
@@ -1054,11 +481,9 @@ p {
   }
 
   .blik__deco__m {
-    padding-left: 2.5rem;
-  }
-
-  .blik__video {
-    margin-left: 25rem;
+    padding-left: 4rem;
+    display: block;
+    position: absolute;
   }
 
   .routes__tekst,
@@ -1166,11 +591,9 @@ p {
 
   .wrapper__titel {
     font-size: 7.2rem;
-  }
-
-  .wrapper__date2,
-  .wrapper__gratis {
-    font-size: 3.6rem;
+    background-image: url(./assets/img/kleineDriehoeken.png);
+    width: 71.9rem;
+    height: 28.6rem;
   }
 
   .routes__tekst,
@@ -1178,8 +601,8 @@ p {
     width: 40rem;
   }
 
-  .blik__video {
-    margin-left: 37rem;
+  .blik__deco__m {
+    display: none;
   }
 
   .info__contact__titel,

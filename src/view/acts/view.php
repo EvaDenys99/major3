@@ -64,7 +64,7 @@
     <?php if($act['website'] !== 'N.v.t.') :?>
       <div class="act__detail-website">
         <p class="act__detail-info-titel">Website</p>
-        <a href="https://<?php echo $act['website'];?>"><?php echo $act["website"];?></a>
+        <a target="_blank" href="https://<?php echo $act['website'];?>"><?php echo $act["website"];?></a>
       </div>
     <?php endif; ?>
     <div class="act__detail-beschrijving">
