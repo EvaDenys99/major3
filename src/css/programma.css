@@ -79,6 +79,10 @@
   display: flex;
   justify-content: center;
 }
+
+.filter__form__submit:hover {
+  transform: scale(1.1);
+}
 /* act tiles */
 
 .acts__list {
@@ -122,6 +126,11 @@
   border-radius: 10%;
   opacity: .5;
   position: absolute;
+}
+
+.act:hover {
+  mix-blend-mode: unset;
+  transform: scale(1.03);
 }
 
 .act__titel2 {

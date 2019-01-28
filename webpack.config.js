@@ -7,7 +7,7 @@ module.exports = (env, {mode}) => {
   console.log(mode);
   return {
     output: {
-      filename: 'script.js'
+      filename: 'script.[hash].js'
     },
     devServer: {
       overlay: true,
@@ -57,7 +57,7 @@ module.exports = (env, {mode}) => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: 'style.css'
+        filename: 'style.[hash].css'
       }),
       new OptimizeCSSAssetsPlugin(),
       new webpack.HotModuleReplacementPlugin()

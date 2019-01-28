@@ -5,11 +5,9 @@ require('./assets/fonts/fonts.css');
   const $filterForm = document.querySelector(`.filter__form`),
     $acts = document.querySelector(`.acts__list`),
     $filterDiv = document.querySelector(`.filter__div`);
-  // const  $filter_knop = document.querySelector(`.filter__form__submit`);
 
   const init = () => {
     // return;
-    // $filter_knop.classList.add(`visually-hidden`);
     if ($filterForm) {
       $filterForm.addEventListener(`submit`, e => {
         e.target.preventDefault();

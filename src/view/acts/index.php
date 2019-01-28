@@ -216,7 +216,8 @@
               assets/img/home/vrijwilligers_m.webp  354w,
               assets/img/home/vrijwilligers_l.webp  422w
             "
-            sizes="(min-width: 1024px) 30vw,
+            sizes="(min-width: 1440px) 25vw,
+                  (min-width: 1024px) 30vw,
                   (min-width: 768px) 45vw,
                   (min-width: 0) 100vw"
           />
@@ -227,7 +228,8 @@
               assets/img/home/vrijwilligers_m.jpg   354w,
               assets/img/home/vrijwilligers_l.jpg   422w
             "
-            sizes="(min-width: 1024px) 30vw,
+            sizes="(min-width: 1440px) 25vw,
+                  (min-width: 1024px) 30vw,
                   (min-width: 768px) 45vw,
                   (min-width: 0) 100vw"
           />

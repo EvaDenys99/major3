@@ -311,6 +311,20 @@ p {
     font-size: 1.6rem;
   }
 
+  .act__titel2 {
+    width: 25rem;
+  }
+
+  .act__titel,
+  .uitgelicht__titel-tekst {
+    font-size: 1.6rem;
+  }
+
+  .act__uren,
+  .uitgelicht__soort-titel {
+    font-size: 1.4rem;
+  }
+
   /* detail */
 
   .act__detail-image {
@@ -643,6 +657,20 @@ p {
   .acts__list {
     grid-gap: 4rem;
     width: 80vw;
+  }
+
+  .act__titel2 {
+    width: 27rem;
+  }
+
+  .act__titel,
+  .uitgelicht__titel-tekst {
+    font-size: 2rem;
+  }
+
+  .act__uren,
+  .uitgelicht__soort-titel {
+    font-size: 1.8rem;
   }
 
   /* detail */
