@@ -357,7 +357,8 @@ p {
       '. foto soort herkomst'
       '. . website website'
       '. locatie beschrijving beschrijving'
-      '. kaart . .';
+      '. kaart beschrijving beschrijving'
+      '. . beschrijving beschrijving';
   }
 }
 
@@ -574,9 +575,9 @@ p {
       '. foto uren duur soort .'
       '. foto herkomst herkomst herkomst .'
       '. . website website website .'
-      '. . beschrijving beschrijving beschrijving .'
-      '. locatie beschrijving beschrijving beschrijving .'
-      '. kaart beschrijving beschrijving beschrijving .';
+      '.  locatie beschrijving beschrijving beschrijving .'
+      '. kaart beschrijving beschrijving beschrijving .'
+      '. . beschrijving beschrijving beschrijving .';
   }
 }
 
